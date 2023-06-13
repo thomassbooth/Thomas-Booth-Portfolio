@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { MdFacebook } from 'react-icons/md'
 import { FaTwitter, FaLinkedin } from 'react-icons/fa'
 import { AiFillGithub, AiOutlineInstagram } from 'react-icons/Ai'
 
