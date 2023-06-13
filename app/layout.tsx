@@ -1,7 +1,9 @@
+import Container from './components/Container'
+import Navbar from './components/navbar/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Quicksand } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Quicksand({ weight: '400', subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +17,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>
+        <div className = 'w-screen transition-colors fixed px-20'>
+          <Navbar />
+          <Container>
+            {children}
+          </Container>
+          
+        </div>
+          
+      </body>
     </html>
   )
 }
