@@ -1,6 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { MdFacebook } from 'react-icons/md'
+import { FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { AiFillGithub, AiOutlineInstagram } from 'react-icons/Ai'
 
 const HomeClient = () => {
 
@@ -33,7 +36,7 @@ const HomeClient = () => {
     //     <motion.h1 className = 'font-bold text-5xl'>HI.</motion.h1>
     //     <motion.h2 className = 'font-bold text-3xl'>IM THOMAS BOOTH.</motion.h2>
     //   </motion.article>
-    <div className = 'flex flex-col items-center '>
+    <div className = 'flex flex-col'>
         <motion.article
             initial={{ x: '50%', opacity: 0 }}
             animate={{ x: '0%', opacity: 1 }}
@@ -68,6 +71,18 @@ const HomeClient = () => {
                 })}
             </motion.h3>
         </motion.article>
+        <p className = 'text-center mt-5'>
+          Welcome to my online abode! Im, a seasoned software engineer passionately committed 
+          to weaving the web one design at a time. I create digital spaces that not only look beautiful
+          but are underpinned by seamless functionality, intuitive interfaces, and designs that embody the 
+          brand spirit of each client.
+        </p>
+        <div className = 'flex gap-5 mt-5'>
+          <FaTwitter onClick = {() => {window.open('https://twitter.com/thomassbooth')}} className = 'hover:text-gray-700 hover:scale-105 transition-all cursor-pointer'/>
+          <FaLinkedin onClick = {() => {window.open('https://www.linkedin.com/in/thomas-booth-08baa6151/')}} className = 'hover:text-gray-700 hover:scale-105 transition-all cursor-pointer'/>
+          <AiFillGithub onClick = {() => {window.open('https://github.com/thomassbooth')}} className = 'hover:text-gray-700 hover:scale-105 transition-all cursor-pointer'/>
+          <AiOutlineInstagram onClick = {() => {window.open('https://www.instagram.com/thomassboothh/')}} className = 'hover:text-gray-800 hover:scale-105 transition-all cursor-pointer'/>
+        </div>
     </div>
   )
 }

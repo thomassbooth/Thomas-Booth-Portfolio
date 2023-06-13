@@ -1,15 +1,14 @@
 'use client'
 
 import { MdDarkMode, MdOutlineDarkMode } from 'react-icons/md'
-import useDarkMode from "@/app/hooks/useDarkMode";
+import { useTheme } from 'next-themes';
 
 const DarkmodeIcon = () => {
-    const [darkTheme, setDarkTheme] = useDarkMode();
-    const handleMode = () => setDarkTheme(!darkTheme);
+    const { theme, setTheme } = useTheme()
     
   return (
     <div>
-      {!darkTheme ? <MdDarkMode className = 'transition-all' onClick = {handleMode}/> : <MdOutlineDarkMode className = 'transition-all' onClick = {handleMode}/>}
+      {(theme === undefined || theme === 'light' )? <MdDarkMode className = 'transition-all' onClick = {() => {setTheme('dark')}}/> : <MdOutlineDarkMode className = 'transition-all' onClick = {() => {setTheme('light')}}/>}
     </div>
     
   )

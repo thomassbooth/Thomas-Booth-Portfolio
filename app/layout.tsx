@@ -1,7 +1,9 @@
+import { ThemeProvider } from 'next-themes'
 import Container from './components/Container'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 import { Quicksand } from 'next/font/google'
+import ThemeProviderO from './Providers/ThemeProviderO'
 
 const roboto = Quicksand({ weight: '400', subsets: ['latin'] })
 
@@ -18,14 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div className = 'w-screen transition-colors fixed px-20'>
-          <Navbar />
-          <Container>
-            {children}
-          </Container>
-          
-        </div>
-          
+          <div className = 'w-screen transition-colors fixed px-20'>
+            <ThemeProviderO>
+            <Navbar />
+            <Container>
+              
+              {children}
+            </Container>   
+            </ThemeProviderO>       
+          </div>
       </body>
     </html>
   )
