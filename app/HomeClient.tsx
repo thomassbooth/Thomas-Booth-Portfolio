@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaTwitter, FaLinkedin, FaGithub, FiInstagram } from 'react-icons/fa'
+import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FiInstagram } from 'react-icons/fi'
 
 const HomeClient = () => {
 
