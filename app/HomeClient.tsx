@@ -1,8 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaTwitter, FaLinkedin } from 'react-icons/fa'
-import { AiFillGithub, AiOutlineInstagram } from 'react-icons/Ai'
+import { FaTwitter, FaLinkedin, FaGithub, FiInstagram } from 'react-icons/fa'
 
 const HomeClient = () => {
 
@@ -79,8 +78,8 @@ const HomeClient = () => {
         <div className = 'flex gap-5 mt-5'>
           <FaTwitter onClick = {() => {window.open('https://twitter.com/thomassbooth')}} className = 'hover:text-gray-700 hover:scale-105 transition-all cursor-pointer'/>
           <FaLinkedin onClick = {() => {window.open('https://www.linkedin.com/in/thomas-booth-08baa6151/')}} className = 'hover:text-gray-700 hover:scale-105 transition-all cursor-pointer'/>
-          <AiFillGithub onClick = {() => {window.open('https://github.com/thomassbooth')}} className = 'hover:text-gray-700 hover:scale-105 transition-all cursor-pointer'/>
-          <AiOutlineInstagram onClick = {() => {window.open('https://www.instagram.com/thomassboothh/')}} className = 'hover:text-gray-800 hover:scale-105 transition-all cursor-pointer'/>
+          <FaGithub onClick = {() => {window.open('https://github.com/thomassbooth')}} className = 'hover:text-gray-700 hover:scale-105 transition-all cursor-pointer'/>
+          <FiInstagram onClick = {() => {window.open('https://www.instagram.com/thomassboothh/')}} className = 'hover:text-gray-800 hover:scale-105 transition-all cursor-pointer'/>
         </div>
     </div>
   )
