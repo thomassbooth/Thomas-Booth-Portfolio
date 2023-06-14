@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-          <div className = 'w-screen transition-colors fixed sm:px-6 md:px-20'>
+          <div className = 'w-screen transition-colors fixed sm:px-6 md:px-20 2xl:px-40'>
             <ThemeProviderO>
             <Navbar />
             <Container>
