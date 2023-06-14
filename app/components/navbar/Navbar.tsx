@@ -7,7 +7,8 @@ import { usePathname } from "next/navigation";
 import DarkmodeIcon from "./DarkmodeIcon";
 
 const links = [
-  { href: '/', label: 'About'},
+  { href: '/', label: 'Home'},
+  { href: '/about', label: 'About'},
   { href: '/projects', label: 'Projects'},
   { href: '/contact', label: 'Contact'},
 ]
@@ -19,6 +20,7 @@ const Navbar = () => {
     <motion.header className= 'z-10'
       initial={{ y: '50%', opacity: 0 }}
       animate={{ y: '0%', opacity: 1 }}
+      transition={{duration: 0.5}}
       exit={{ opacity: 0 }}>
       <div className="flex items-center  text-[15px] font-bold py-20 justify-between">
         <Link href="/" className="text-3xl  font-bold">
