@@ -70,7 +70,7 @@ const HomeClient = () => {
                 })}
             </motion.h3>
         </motion.article>
-        <p className = 'text-center mt-5 2xl:text-2xl'>
+        <p className = 'text-center mt-5 2xl:text-xl'>
           Welcome to my online abode! Im, a seasoned software engineer passionately committed 
           to weaving the web one design at a time. I create digital spaces that not only look beautiful
           but are underpinned by seamless functionality, intuitive interfaces, and designs that embody the 
