@@ -48,7 +48,7 @@ const HomeClient = () => {
                 {line1.split('').map((char, i) => {
                     return (
                         <motion.span 
-                            className = 'text-5xl'
+                            className = 'text-7xl'
                             key = {char + i}
                             variants = {letter}
                         >
@@ -60,7 +60,7 @@ const HomeClient = () => {
                 {line2.split('').map((char, i) => {
                     return (
                         <motion.span 
-                            className = 'text-3xl'
+                            className = 'text-5xl'
                             key = {char + i}
                             variants = {letter}
                         >
