@@ -48,7 +48,7 @@ const HomeClient = () => {
                 {line1.split('').map((char, i) => {
                     return (
                         <motion.span 
-                            className = 'text-7xl'
+                            className = 'text-5xl 2xl:text-6xl'
                             key = {char + i}
                             variants = {letter}
                         >
@@ -60,7 +60,7 @@ const HomeClient = () => {
                 {line2.split('').map((char, i) => {
                     return (
                         <motion.span 
-                            className = 'text-5xl'
+                            className = 'text-3xl 2xl:text-4xl'
                             key = {char + i}
                             variants = {letter}
                         >
@@ -70,7 +70,7 @@ const HomeClient = () => {
                 })}
             </motion.h3>
         </motion.article>
-        <p className = 'text-center mt-5 2xl:text-xl'>
+        <p className = 'text-center mt-5 2xl:text-lg'>
           Welcome to my online abode! Im, a seasoned software engineer passionately committed 
           to weaving the web one design at a time. I create digital spaces that not only look beautiful
           but are underpinned by seamless functionality, intuitive interfaces, and designs that embody the 
