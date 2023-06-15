@@ -1,8 +1,11 @@
+import PageTransition from "../components/PageTransition"
 
 
 const PricingPage = () => {
   return (
-    <div>pricing</div>
+    <PageTransition>
+      Pricing
+    </PageTransition>
   )
 }
 

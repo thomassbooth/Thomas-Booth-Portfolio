@@ -1,8 +1,11 @@
 import React from 'react'
+import PageTransition from '../components/PageTransition'
 
 const ContactPage = () => {
   return (
-    <div>page</div>
+    <PageTransition>
+      contact
+    </PageTransition>
   )
 }
 

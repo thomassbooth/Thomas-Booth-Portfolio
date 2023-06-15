@@ -1,9 +1,10 @@
+import PageTransition from "../components/PageTransition"
 
 const ProjectsPage = () => {
   return (
-    <div>
+    <PageTransition>
       projects
-    </div>
+    </PageTransition>
   )
 } 
 
