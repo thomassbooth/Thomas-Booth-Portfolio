@@ -22,10 +22,10 @@ export default function RootLayout({
       <body className={roboto.className}>
           <div className = 'w-screen transition-colors text-pastel-brown-dark fixed sm:px-6 md:px-20 2xl:px-40'>
             <ThemeProviderO>
-            <Navbar />
-            <Container>
-              {children}
-            </Container>   
+              <Navbar />
+              <Container>
+                {children}
+              </Container>   
             </ThemeProviderO>       
           </div>
       </body>

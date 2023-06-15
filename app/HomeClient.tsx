@@ -30,7 +30,7 @@ const HomeClient = () => {
 
     const bounceTransition = {
         x: {
-            duration: 0.4,
+            duration: 0.6,
             repeat: Infinity,
             repeatType: 'reverse',
             ease: 'easeOut'
@@ -84,8 +84,13 @@ const HomeClient = () => {
             <motion.span 
                 className = 'gap-2 cursor-pointer'
                 transition = {bounceTransition}
+                whileHover={{
+                    scale: 0.8,
+                    rotate: -360,
+                    borderRadius: "100%"
+                  }}
                 animate = {{
-                    x: ['5%', '-5%']
+                    x: ['10%', '-10%']
                 }}>
                 <FaArrowRight/>
                 

@@ -34,12 +34,12 @@ const Navbar = () => {
                 <motion.div
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className = 'group hover:text-blue-300 transition-colors duration-500'
+                  className = 'group hover:text-pastel-blue-dark-100 transition-colors duration-500'
                 >
                   {link.href === path && (
                     <motion.span
                       layoutId="underline"
-                      className="group-hover:bg-blue-300 transition-colors duration-500 absolute left-0 top-full block mt-1 h-[1px] w-full bg-black"
+                      className="group-hover:bg-pastel-blue-dark-100 transition-colors duration-500 absolute left-0 top-full block mt-1 h-[1px] w-full bg-black"
                     />
                   )}
                   {link.label}
