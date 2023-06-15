@@ -42,7 +42,7 @@ const HomeClient = () => {
             className = 'text-center'
             initial={{ x: '50%', opacity: 0 }}
             animate={{ x: '0%', opacity: 1 }}
-            transition={{type: 'spring', when: 'beforeChildren', duration: 0.5, staggerChildren: 0.2}}>
+            transition={{delay: 0.6, type: 'spring', when: 'beforeChildren', duration: 0.5, staggerChildren: 0.2}}>
             <motion.h3
                 className = 'font-bold'
                 variants = {sentenceTransition}
