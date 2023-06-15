@@ -9,11 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   return (
-    <main className="flex flex-col text-center items-center">
+    <main className="flex flex-col items-center">
       <div className = 'w-3/5'>
         <HomeClient/>  
       </div>
-      
     </main>
   )
 }
