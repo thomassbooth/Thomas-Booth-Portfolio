@@ -5,6 +5,7 @@ import Link from "next/link"
 import { motion } from 'framer-motion'
 import { usePathname } from "next/navigation";
 import DarkmodeIcon from "./DarkmodeIcon";
+import Logo from "./Logo";
 
 const links = [
   { href: '/', label: 'Home'},
@@ -20,12 +21,10 @@ const Navbar = () => {
     <motion.header className= 'z-10'
       initial={{ y: '50%', opacity: 0 }}
       animate={{ y: '0%', opacity: 1 }}
-      transition={{duration: 0.5}}
+      transition={{duration: 1}}
       exit={{ opacity: 0 }}>
       <div className="flex items-center  text-[15px] font-bold pb-20 justify-between">
-        <Link href="/" className="text-3xl  font-bold">
-          T B
-        </Link>
+        <Logo/>
         <nav className = 'hidden sm:flex items-center'>
           <ul className="[&_li]:ml-4 ml-12 flex">
             {links.map((link) => (
