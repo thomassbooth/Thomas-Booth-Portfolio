@@ -3,7 +3,7 @@ import PageTransition from '../components/PageTransition'
 
 const AboutPage = () => {
   return (
-    <PageTransition>
+    <PageTransition key = {'page'}>
       Page2
     </PageTransition>
   )

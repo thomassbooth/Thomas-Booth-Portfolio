@@ -11,11 +11,11 @@ export default function Home() {
 
   return (
     <PageTransition>
-    <main className="flex flex-col items-center">
-      <div className = 'w-3/5'>
-        <HomeClient/>  
-      </div>
-    </main>
+      <main className="flex flex-col items-center">
+        <div className = 'w-3/5'>
+          <HomeClient/>  
+        </div>
+      </main>
     </PageTransition>
   )
 }
