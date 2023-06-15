@@ -22,11 +22,11 @@ const Navbar = () => {
       animate={{ y: '0%', opacity: 1 }}
       transition={{duration: 0.5}}
       exit={{ opacity: 0 }}>
-      <div className="flex items-center  text-[15px] font-bold py-20 justify-between">
+      <div className="flex items-center  text-[15px] font-bold pb-20 justify-between">
         <Link href="/" className="text-3xl  font-bold">
           T B
         </Link>
-        <nav className = 'flex items-center'>
+        <nav className = 'hidden sm:flex items-center'>
           <ul className="[&_li]:ml-4 ml-12 flex">
             {links.map((link) => (
               <li key={link.href}>
