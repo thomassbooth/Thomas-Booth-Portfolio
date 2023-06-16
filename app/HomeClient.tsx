@@ -28,6 +28,9 @@ const HomeClient = () => {
           but are underpinned by seamless functionality, intuitive interfaces, and designs that embody the 
           brand spirit of each client.
         </p>
+        <motion.div
+        whileTap={{ scale: 0.95 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}>
         <Link href = '/about' className = 'flex items-center gap-2 mt-10 hover:underline'>
             Find out more
             <motion.span 
@@ -42,15 +45,10 @@ const HomeClient = () => {
                     x: ['10%', '-10%']
                 }}>
                 <FaArrowRight/>
-                
             </motion.span>
         </Link>
-        <div className = 'flex gap-5 mt-5'>
-          <FaTwitter onClick = {() => {window.open('https://twitter.com/thomassbooth')}} className = 'hover:text-gray-600 hover:scale-105 transition-all cursor-pointer'/>
-          <FaLinkedin onClick = {() => {window.open('https://www.linkedin.com/in/thomas-booth-08baa6151/')}} className = 'hover:text-gray-600 hover:scale-105 transition-all cursor-pointer'/>
-          <FaGithub onClick = {() => {window.open('https://github.com/thomassbooth')}} className = 'hover:text-gray-600 hover:scale-105 transition-all cursor-pointer'/>
-          <FiInstagram onClick = {() => {window.open('https://www.instagram.com/thomassboothh/')}} className = 'hover:text-gray-600 hover:scale-105 transition-all cursor-pointer'/>
-        </div>
+        </motion.div>
+        
 
     </div>
   )

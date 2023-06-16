@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar'
 import './globals.css'
 import { Quicksand } from 'next/font/google'
 import ThemeProviderO from './Providers/ThemeProviderO'
+import Personals from './components/Personals'
 
 const roboto = Quicksand({ weight: '400', subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           <div className = 'overflow-auto py-20 w-screen transition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-40'>
             <ThemeProviderO>
               <Navbar />
+              <Personals />
               <Container>
                 {children}
               </Container>   
