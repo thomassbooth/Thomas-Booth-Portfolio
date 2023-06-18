@@ -11,7 +11,7 @@ const PageTransition = ({ children, width }: {
     <>
         <AnimatePresence>
             <motion.div
-                className = 'flex flex-col items-center'
+                className = 'flex flex-col items-center overflow-x-hidden'
                 initial = {{ opacity: 0, y: 20}}
                 animate = {{ opacity: 1, y: 0}}
                 transition = {{ delay: 0.25}}
