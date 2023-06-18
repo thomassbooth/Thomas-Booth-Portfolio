@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { FaTwitter, FaLinkedin, FaGithub, FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
-import Title from './components/home/Title'
+import Title from './components/home/HomeTitle'
 
 const HomeClient = () => {
 

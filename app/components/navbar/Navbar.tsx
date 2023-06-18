@@ -35,7 +35,8 @@ const Navbar = () => {
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                   className = 'group hover:text-pastel-blue-dark-100 transition-colors duration-500'
                 >
-                  {link.href === path && (
+                  {
+                  ((link.href === path) || (path.includes('/projects') && link.href === '/projects')) && (
                     <motion.span
                       layoutId="underline"
                       className="group-hover:bg-pastel-blue-dark-100 transition-colors duration-500 absolute left-0 top-full block mt-1 h-[1px] w-full bg-pastel-brown-dark"
