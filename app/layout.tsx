@@ -20,8 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-          <div className = 'py-20 w-full h-full transition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-32'>
+      <body className={`${roboto.className} w-screen`}>
+          <div className = 'py-20 ransition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-32'>
             <ThemeProviderO>
               <Navbar />
               <Personals />
