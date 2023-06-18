@@ -6,7 +6,20 @@
     body {
         @apply dark:bg-black bg-pastel-white
         
-        
     }
+
 }
 
+body::-webkit-scrollbar {
+    width: 12px
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: '#EEE9DA';
+    border: 3px solid '#594545';
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: '#594545';
+}
