@@ -6,7 +6,7 @@ import TechClient from './TechClient'
 
 const AboutPage = () => {
   return (
-    <PageTransition width = 'w-4/6'>
+    <PageTransition width = 'w-4/5'>
        <Title title = 'About me' pageNo = {'02'} slideDirection = {'right'}/>
        <p>
             My name is Thomas Booth and I am a full stack Software Engineer from the UK currently relocating to Dubai.
