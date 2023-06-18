@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-          <div className = 'py-20 transition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-32'>
+          <div className = 'py-20 w-screen transition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-32'>
             <ThemeProviderO>
               <Navbar />
               <Personals />
