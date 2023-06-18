@@ -25,6 +25,7 @@ export default function RootLayout({
             <ThemeProviderO>
               <Navbar />
               <Personals />
+              
               <Container>
                 {children}
               </Container>   
