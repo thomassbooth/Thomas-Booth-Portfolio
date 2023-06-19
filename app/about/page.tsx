@@ -2,21 +2,40 @@ import React from 'react'
 import PageTransition from '../components/PageTransition'
 import Title from '../components/Title'
 import TechClient from './TechClient'
+import Image from 'next/image'
+import Subtitle from '../components/Subtitle'
 
 
 const AboutPage = () => {
   return (
-    <PageTransition width = 'w-4/5'>
-       <Title title = 'About me' pageNo = {'02'} slideDirection = {'right'}/>
-       <p>
-            My name is Thomas Booth and I am a full stack Software Engineer from the UK currently relocating to Dubai.
-        </p>
-        <p>
-            I have worked with a wide variety of different technologies; front-end, back-end and cloud infastructure.
-        </p>
-        <p>Lorem ipsum dolor sit amet. Ut laudantium animi ut laudantium enim et consequatur aspernatur nam molestiae repudiandae aut sunt minus ad similique vitae. 33 illum sint ea maiores quas est deleniti minima. </p><p>Non doloribus dolor et quisquam aliquam ea velit ipsam At corporis sint! Aut expedita dolorem sed dolore voluptatem et sequi nihil qui molestias pariatur. </p><p>Et sapiente dolor ut sequi velit non quibusdam omnis ut tenetur rerum sed voluptates deleniti. Et ducimus magni qui molestiae molestiae aut placeat molestias sed expedita dolores hic nemo galisum. Aut eius exercitationem hic iste nihil ea accusantium porro et illo suscipit est odio saepe hic autem natus? </p><p>Et reprehenderit sunt ab perspiciatis voluptas et quia voluptas. Ex Quis repellat ea distinctio numquam et veniam voluptas aut laboriosam velit et inventore galisum ut culpa rerum. </p><p>Ex ducimus soluta sit velit excepturi aut repudiandae nihil non atque delectus ut eaque minima. Eos facere nobis id quas fugiat nam eveniet sint aut quidem numquam est tempore reprehenderit est sunt quidem? Et cumque cumque a alias enim in voluptatem quod est nesciunt maxime et temporibus possimus. A nihil voluptatibus et doloremque aliquam sed maiores sint sit error quibusdam. </p><p>Est dolores rerum et voluptatem modi et quidem dolorum in aspernatur voluptatem. Est veniam sint qui veniam cumque cum Quis laborum. </p><p>A commodi pariatur et enim sapiente vel internos aliquid aut deserunt animi ea quod laborum et soluta saepe! Ea quia laboriosam est quia fugiat et explicabo quam sit blanditiis beatae est doloribus galisum. </p>
-        <h2 className = 'font-bold text-xl m-5'>Recent technologies I&apos;ve been working with:</h2>
-        <TechClient/>
+  <PageTransition width = 'w-4/5'>
+    <Title title = 'About me' pageNo = {'02'} slideDirection = {'right'}/>
+      <div className = 'flex items-center'>
+        <div className = 'leading-relaxed px-4'>
+          <p className = 'mb-4'>
+              My name is Thomas Booth and I am a full stack Software Engineer from the UK currently relocating to Dubai.
+          </p>
+          <p>
+            Ive amassed considerable experience in diverse tech areas, encompassing front-end, back-end, and cloud infrastructure. My present work involves utilizing technologies like Nextjs, React, Nodejs, Django, and a broad spectrum of AWS tools.
+
+            My proficiency extends beyond the tech sector. I earned a solid First class degree in Physics and Mathematics during my tenure at Cardiff University. And interestingly, my foray into the professional world started early. From the age of 13, I embarked on my journey as a freelance graphic designer, successfully completing large-scale projects for businesses and YouTube personalities.
+          </p>
+        </div>
+        <div className = 'relative group'>
+          <div className = 'group-hover:translate-y-1 group-hover:translate-x-1 transition-all absolute border-2 rounded-md border-pastel-brown-light w-full h-full transform translate-x-2 translate-y-2 -z-10'/>
+          <Image src = '/images/dummyMe.jpg' 
+          className = 'shadow-sm'
+          alt = 'Pick of me :D'
+          width={500}
+          height={500}/>
+        </div>
+        
+        
+      </div>
+      <h2 className = 'font-bold text-xl m-5'>My Tech Stack</h2>
+      <TechClient/>
+      <Subtitle title = {'Where Ive Worked'}/>
+      {/* <HistoryClient/> */}
     </PageTransition>
   )
 }
