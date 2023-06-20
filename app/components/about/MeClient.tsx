@@ -5,7 +5,7 @@ import React from 'react'
 
 const MeClient = () => {
   return (
-    <div className = 'flex h-[70vh]'>
+    <div className = 'flex h-[70vh] 2xl:h-[80vh]'>
       <div className = 'leading-relaxed px-4'>
         <p className = 'mb-4'>
             My name is Thomas Booth and I am a full stack Software Engineer from the UK currently relocating to Dubai.
