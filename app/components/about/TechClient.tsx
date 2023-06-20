@@ -3,8 +3,8 @@
 import { TbBrandNextjs } from 'react-icons/tb'
 import { SiDjango, SiFastapi, SiKubernetes, SiMongodb, SiPostgresql, SiRedis } from 'react-icons/si'
 import { FaNodeJs, FaReact, FaLaravel, FaDocker, FaAws } from 'react-icons/fa'
-import ListItem from '../components/about/ListItem'
-import List from '../components/about/List'
+import ListItem from './ListItem'
+import List from './List'
 
 const TechClient = () => {
   return (

@@ -14,8 +14,13 @@ const List: React.FC<listProps> = ({ children, title, direction }) => {
     <div className = 'flex flex-col items-center'>
         <p className = 'font-bold text-lg'>{title}</p>
         <motion.ul 
-            initial = {(direction === 'up') ? {opacity: 0, y: '-40%'} : {opacity: 0, y: '40%'}}
-            animate = {{opacity: 1, y: '0'}}
+            initial = 'hidden'
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants = {{
+              hidden: (direction === 'up') ? {opacity: 0, y: '-40%'} : {opacity: 0, y: '40%'},
+              visible: {opacity: 1, y: '0'}
+            }}
             transition = {{delay: 0.8}}
             className = 'mt-5 flex flex-col border-l-2 border-pastel-brown-dark gap-5'>
             {children}

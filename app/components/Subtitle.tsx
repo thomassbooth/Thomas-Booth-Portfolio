@@ -18,8 +18,8 @@ const Subtitle: React.FC<subtitleProps> = ({title}) => {
             viewport={{ once: true }}
             transition={{ duration: 0.3 }}
             variants={{
-              visible: { opacity: 1, scale: 1 },
-              hidden: { opacity: 0, scale: 0 }
+              visible: { opacity: 1},
+              hidden: { opacity: 0 }
             }}>
                 {title}
         </motion.h2>
