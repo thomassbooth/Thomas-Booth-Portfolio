@@ -5,6 +5,7 @@ import './globals.css'
 import { Quicksand } from 'next/font/google'
 import ThemeProviderO from './Providers/ThemeProviderO'
 import Personals from './components/Personals'
+import { GlobalContextProvider } from './Providers/GlobalProvider'
 
 const roboto = Quicksand({ weight: '400', subsets: ['latin'] })
 
@@ -22,13 +23,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.className} w-screen overflow-x-hidden  `}>
           <div className = 'py-20 ransition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-32'>
-            <ThemeProviderO>
-              <Navbar />
-              <Personals />
-              <Container>
-                {children}
-              </Container>   
-            </ThemeProviderO>       
+            <GlobalContextProvider>
+              <ThemeProviderO>
+                <Navbar />
+                <Personals />
+                <Container>
+                  {children}
+                </Container>   
+              </ThemeProviderO>    
+            </GlobalContextProvider>   
           </div>
       </body>
     </html>
