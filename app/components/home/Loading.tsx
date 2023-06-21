@@ -1,7 +1,7 @@
 'use client'
 
 import React, { Dispatch, SetStateAction, useEffect } from 'react'
-import { stagger, useAnimate, motion } from 'framer-motion'
+import {useAnimate} from 'framer-motion'
 import { useGlobalContext } from '@/app/Providers/GlobalProvider'
 
     

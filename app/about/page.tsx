@@ -12,9 +12,9 @@ const AboutPage = () => {
   <PageTransition width = 'w-4/5'>
     <Title title = 'About me' pageNo = {'02'} slideDirection = {'right'}/>
     <MeClient/>
-    <h2 className = 'font-bold text-xl m-5'>My Tech Stack</h2>
+    <Subtitle title = {'My Tech Stack'} visable = {{y: '0%'}} hidden = {{y: '30%'}}/>
     <TechClient/>
-    <Subtitle title = {'Where Ive Worked'}/>
+    <Subtitle title = {'Where Ive Worked'} visable = {{x: '0%'}} hidden = {{x: '30%'}}/>
     {/* <HistoryClient/> */}
   </PageTransition>
   )

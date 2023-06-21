@@ -9,6 +9,9 @@ import List from './List'
 const TechClient = () => {
   return (
     <div>
+        <p className = 'm-8'>
+            I enjoy working with cutting edge technology and im permenatly chasing the latest tech to give users and myself a more forfilling experience.
+        </p>
         <article className = 'flex flex-row justify-evenly'>
             <List title = 'Typescript & Javascript' direction = 'up'>
                 <ListItem tech = 'NextJS' icon = {TbBrandNextjs}/>

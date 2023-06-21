@@ -10,6 +10,9 @@
 
 }
 
+body {
+    background: radial-gradient(#EEE9DA, #9e767647);
+}
 body::-webkit-scrollbar {
     width: 12px
 }
