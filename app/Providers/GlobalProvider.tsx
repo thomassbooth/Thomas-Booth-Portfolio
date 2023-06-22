@@ -8,12 +8,12 @@ interface contextProps {
 }
 
 const GlobalContext = createContext<contextProps>({
-    loading: true,
+    loading: false,
     setLoading: (): boolean => true
 })
 
 export const GlobalContextProvider = ({ children } : { children: React.ReactNode }) => {
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
     return (
         <GlobalContext.Provider value = {{ loading, setLoading }}>

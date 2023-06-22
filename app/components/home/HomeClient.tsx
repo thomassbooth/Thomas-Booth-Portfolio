@@ -38,7 +38,7 @@ const HomeClient = () => {
         layoutId = 'loading'
         animate = {{opacity: 1}}>
           <Title line1 = {'HI.'} line2 = {'IM THOMAS BOOTH.'} />
-          <p className = 'text-center mt-5'>
+          <p className = 'text-left mt-5'>
             Welcome to my online abode! Im, a seasoned software engineer passionately committed 
             to weaving the web one design at a time. I create digital spaces that not only look beautiful
             but are underpinned by seamless functionality, intuitive interfaces, and designs that embody the 

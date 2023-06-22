@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   return (
-    <PageTransition width = {'w-3/5'}>
+    <PageTransition width = {'w-3/6'}>
         <HomeClient/>
     </PageTransition>
   )

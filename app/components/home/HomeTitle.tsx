@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Roboto } from 'next/font/google'
 
 interface TitleProps {
     line1: string
@@ -26,11 +27,13 @@ const letterTransition = {
 
 }
 
+const OpenSans = Roboto({weight: ['500'], subsets: ['latin'] })
+
 const Title: React.FC<TitleProps>  = ({ line1, line2 }) => {
   return (
     <>
         <motion.article
-            className = 'text-center'
+            className = {`${OpenSans.className}  leading-[60px] text-left`}
             initial={{ x: '50%', opacity: 0 }}
             animate={{ x: '0%', opacity: 1 }}
             transition={{delay: 0.6, type: 'spring', when: 'beforeChildren', duration: 0.5, staggerChildren: 0.2}}>
@@ -50,11 +53,11 @@ const Title: React.FC<TitleProps>  = ({ line1, line2 }) => {
                         </motion.span>
                     )
                 })}
-                <br />
+                <br className = 'my-5'/>
                 {line2.split('').map((char, i) => {
                     return (
                         <motion.span 
-                            className = 'text-3xl'
+                            className = 'text-5xl'
                             key = {char + i}
                             variants = {letterTransition}
                         >
