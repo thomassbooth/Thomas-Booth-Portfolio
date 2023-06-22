@@ -7,7 +7,7 @@ import ThemeProviderO from './Providers/ThemeProviderO'
 import Personals from './components/Personals'
 import { GlobalContextProvider } from './Providers/GlobalProvider'
 
-const roboto = Quicksand({ weight: '400', subsets: ['latin'] })
+const roboto = Quicksand({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Home - Thomas Booth',
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} w-screen overflow-x-hidden  `}>
+      <body className={`${roboto.className} w-screen overflow-x-hidden`}>
           <div className = 'py-20 ransition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-32'>
             <GlobalContextProvider>
               <ThemeProviderO>
