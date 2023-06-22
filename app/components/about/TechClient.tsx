@@ -8,8 +8,8 @@ import List from './List'
 
 const TechClient = () => {
   return (
-    <div>
-        <p className = 'm-8'>
+    <div className = ''>
+        <p className = 'm-8 text-lg'>
             I enjoy working with cutting edge technology and im permenatly chasing the latest tech to give users and myself a more forfilling experience.
         </p>
         <article className = 'flex flex-row justify-evenly'>
@@ -25,7 +25,7 @@ const TechClient = () => {
             <List title = 'PHP' direction = 'down'>
                 <ListItem tech = 'Laravel' icon = {FaLaravel}/>
             </List>
-            <List title = 'Cloud and Infastructure' direction = 'up'>
+            <List title = 'Cloud + Infastructure' direction = 'up'>
                 <ListItem tech = 'Docker' icon = {FaDocker}/>
                 <ListItem tech = 'AWS' icon = {FaAws}/>
                 <ListItem tech = 'PostgreSQL' icon = {SiPostgresql} />
