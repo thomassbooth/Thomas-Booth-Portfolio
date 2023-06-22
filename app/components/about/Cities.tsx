@@ -76,8 +76,8 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 export default function Cities() {
   return (
     <section>
-      <ParallaxText baseVelocity={-5}>DUBAI LONDON RYK</ParallaxText>
-      <ParallaxText baseVelocity={5}>RYK LONDON DUBAI</ParallaxText>
+      <ParallaxText baseVelocity={-1}>DUBAI LONDON RYK</ParallaxText>
+      <ParallaxText baseVelocity={1}>RYK LONDON DUBAI</ParallaxText>
     </section>
   );
 }
