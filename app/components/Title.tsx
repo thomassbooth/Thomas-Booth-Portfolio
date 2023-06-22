@@ -35,7 +35,7 @@ const Title: React.FC<titleProps> = ({title, pageNo, slideDirection}) => {
   return (
     <>
         <motion.h1 
-            className = 'font-black text-3xl mb-10 flex items-center gap-4'
+            className = 'font-black text-3xl mb-10 flex items-center gap-4  '
             initial = {initialAnimation}
             animate = {{opacity: 1, x: '0%', y: '0%'}}
             transition = {{ delay: 0.5}}>
