@@ -6,6 +6,11 @@ import { motion } from 'framer-motion'
 import { usePathname } from "next/navigation";
 import DarkmodeIcon from "./DarkmodeIcon";
 import Logo from "./Logo";
+import { Inter } from "next/font/google";
+
+
+
+const inter = Inter({weight: ['500'], subsets: ['latin'] })
 
 const links = [
   { href: '/', label: 'Home'},
@@ -18,12 +23,12 @@ const Navbar = () => {
   const path = usePathname();
   
   return (
-    <motion.header className= 'z-10'
+    <motion.header className= {`${inter.className} z-10`}
       initial={{ y: '50%', opacity: 0 }}
       animate={{ y: '0%', opacity: 1 }}
       transition={{duration: 1}}
       exit={{ opacity: 0 }}>
-      <div className="flex items-center  text-[15px] font-bold pb-20 justify-between">
+      <div className="flex items-center  text-[15px] pb-20 justify-between">
         <Logo/>
         <nav className = 'hidden sm:flex items-center'>
           <ul className="[&_li]:ml-4 ml-12 flex">

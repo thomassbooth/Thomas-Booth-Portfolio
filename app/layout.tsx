@@ -7,7 +7,7 @@ import ThemeProviderO from './Providers/ThemeProviderO'
 import Personals from './components/Personals'
 import { GlobalContextProvider } from './Providers/GlobalProvider'
 
-const roboto = Quicksand({ subsets: ['latin'] })
+const roboto = Quicksand({subsets: ['latin'] })
 
 export const metadata = {
   title: 'Home - Thomas Booth',

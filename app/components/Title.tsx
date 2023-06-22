@@ -19,16 +19,16 @@ const Title: React.FC<titleProps> = ({title, pageNo, slideDirection}) => {
 
   switch (slideDirection) {
     case 'left':
-      initialAnimation = {x: '10%'}
+      initialAnimation = { opacity: 0, x: '10%'}
       break;
     case 'right':
-      initialAnimation = {x: '-10%'}
+      initialAnimation = { opacity: 0, x: '-10%'}
       break;
     case 'up':
-      initialAnimation = {y: '20%'}
+      initialAnimation = { opacity: 0 , y: '20%'}
       break;
     case 'down':
-      initialAnimation = {y: '-20%'}
+      initialAnimation = { opacity: 0 , y: '-20%'}
       break;
     default:
       initialAnimation = { opacity: 0 }
@@ -40,7 +40,7 @@ const Title: React.FC<titleProps> = ({title, pageNo, slideDirection}) => {
           className = {`${roboto.className} font-black text-3xl mb-10 flex items-center gap-4`}
             initial = {initialAnimation}
             animate = {{opacity: 1, x: '0%', y: '0%'}}
-            transition = {{ delay: 0.5}}>
+            transition = {{ delay: 1}}>
             <span className = {`${RobotoMono.className} opacity-40 font-bold text-2xl`}>
                 {pageNo}.
             </span>

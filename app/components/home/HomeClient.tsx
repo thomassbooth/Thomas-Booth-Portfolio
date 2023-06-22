@@ -37,7 +37,7 @@ const HomeClient = () => {
       <motion.div
         layoutId = 'loading'
         animate = {{opacity: 1}}>
-          <Title line1 = {'HI.'} line2 = {'IM THOMAS BOOTH.'} />
+          <Title line1 = {'Hi.'} line2 = 'I&#39;m Thomas Booth.' />
           <p className = 'text-left mt-5'>
             Welcome to my online abode! Im, a seasoned software engineer passionately committed 
             to weaving the web one design at a time. I create digital spaces that not only look beautiful
