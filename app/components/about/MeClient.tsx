@@ -3,14 +3,16 @@
 import { useScroll, motion } from 'framer-motion';
 import Image from 'next/image'
 import React from 'react'
+import Cities from './Cities';
+
+
 
 const MeClient = () => {
 
-  const { scrollYProgress } = useScroll();
-
+  const { scrollY, scrollYProgress } = useScroll()
   return (
     <section>
-      <div className = 'flex h-[70vh] 2xl:h-[75vh] text-lg'>
+      <div className = 'flex text-lg'>
         <div className = 'leading-relaxed px-4'>
           <p className = 'mb-4'>
               My name is Thomas Booth and I am a full stack Software Engineer from the UK currently relocating to Dubai.
@@ -30,11 +32,10 @@ const MeClient = () => {
             height={500}/>
         </div>
       </div>
-      <div className = 'flex flex-col text-6xl'>
-        <motion.span style = {{ transform: `translate(${scrollYProgress}px)`}}>DUBAI LONDON RKV</motion.span>
-        <span>RKV LONDON DUBAI</span>
+      
+      <div className = 'flex flex-col w-screen text-6xl opacity-10'>
+        <Cities />
       </div>
-      <motion.div className = 'bg-black h-10' style={{ scaleX: scrollYProgress }} />
     </section>
   )
 }
