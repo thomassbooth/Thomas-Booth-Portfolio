@@ -38,16 +38,13 @@ const HomeClient = () => {
         layoutId = 'loading'
         animate = {{opacity: 1}}>
           <Title line1 = {'Hi.'} line2 = 'I&#39;m Thomas Booth.' />
-          <p className = 'text-left mt-5'>
-            Welcome to my online abode! Im, a seasoned software engineer passionately committed 
-            to weaving the web one design at a time. I create digital spaces that not only look beautiful
-            but are underpinned by seamless functionality, intuitive interfaces, and designs that embody the 
-            brand spirit of each client.
+          <p className = 'text-left mt-5 text-lg'>
+          Welcome to my digital hub! As an experienced software engineer, I passionately craft functional, intuitive, and visually appealing digital spaces that encapsulate each client&#39;s brand spirit.
           </p>
           <motion.div
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}>
-          <Link href = '/about' className = 'flex items-center gap-2 mt-10 hover:underline'>
+          <Link href = '/about' className = 'flex items-center gap-2 mt-10 font-medium text-lg hover:underline'>
               Find out more
               <motion.span 
                   className = 'gap-2 cursor-pointer'
@@ -58,7 +55,7 @@ const HomeClient = () => {
                       borderRadius: "100%"
                     }}
                   animate = {{
-                      x: ['10%', '-10%']
+                      x: ['30%', '-10%']
                   }}>
                   <FaArrowRight/>
               </motion.span>
