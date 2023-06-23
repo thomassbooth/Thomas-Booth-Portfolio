@@ -25,7 +25,7 @@ function useSlideShowAnimation(setLoading: Dispatch<SetStateAction<boolean>>){
                 ],
                 [
                     'div', {width: 0},
-                    { duration: 1, ease: 'easeOut'}
+                    { duration: 0.7, ease: 'easeOut'}
                 ]
             ])
             setLoading(false)
