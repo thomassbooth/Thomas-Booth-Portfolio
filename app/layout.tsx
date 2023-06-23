@@ -6,6 +6,7 @@ import { Inter, Quicksand } from 'next/font/google'
 import ThemeProviderO from './Providers/ThemeProviderO'
 import Personals from './components/Personals'
 import { GlobalContextProvider } from './Providers/GlobalProvider'
+import OuterContainer from './components/OuterContainer'
 
 const roboto = Quicksand({subsets: ['latin'] })
 const inter = Inter({subsets: ['latin'] })
@@ -23,17 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} tracking-wide w-screen overflow-x-hidden`}>
-          <div className = 'py-20 ransition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-32'>
-            <GlobalContextProvider>
-              <ThemeProviderO>
-                <Navbar />
-                <Personals />
-                <Container>
-                  {children}
-                </Container>   
-              </ThemeProviderO>    
-            </GlobalContextProvider>   
-          </div>
+        <OuterContainer>
+          <GlobalContextProvider>
+            <ThemeProviderO>
+              <Navbar />
+              <Personals />
+              <Container>
+                {children}
+              </Container>   
+            </ThemeProviderO>    
+          </GlobalContextProvider>   
+        </OuterContainer>
       </body>
     </html>
   )
