@@ -1,5 +1,6 @@
 'use client'
 
+import { usePathname } from "next/navigation"
 import { Dispatch, SetStateAction, createContext, useContext, useState } from "react"
 
 interface contextProps {
@@ -13,7 +14,8 @@ const GlobalContext = createContext<contextProps>({
 })
 
 export const GlobalContextProvider = ({ children } : { children: React.ReactNode }) => {
-    const [loading, setLoading] = useState(true)
+    const pathname = usePathname()
+    const [loading, setLoading] = useState(pathname === '/' ? true: false )
 
     return (
         <GlobalContext.Provider value = {{ loading, setLoading }}>
