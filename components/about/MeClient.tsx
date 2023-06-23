@@ -18,9 +18,7 @@ const MeClient = () => {
               My name is Thomas Booth and I am a full stack Software Engineer from the UK currently relocating to Dubai.
           </p>
           <p>
-            Ive amassed considerable experience in diverse tech areas, encompassing front-end, back-end, and cloud infrastructure. My present work involves utilizing technologies like Nextjs, React, Nodejs, Django, and a broad spectrum of AWS tools.
-
-            My proficiency extends beyond the tech sector. I earned a solid First class degree in Physics and Mathematics during my tenure at Cardiff University. And interestingly, my foray into the professional world started early. From the age of 13, I embarked on my journey as a freelance graphic designer, successfully completing large-scale projects for businesses and YouTube personalities.
+          I have gained extensive expertise in various technology domains, including front-end development, back-end development, and cloud infrastructure. I am currently leveraging Next.js, React, Node.js, Django, and a wide range of AWS services in my work. My skillset transcends the boundaries of the technology industry. During my tenure at Cardiff University, I successfully obtained a First-class degree in Physics and Mathematics. Interestingly, my professional journey commenced at an early stage. Since the age of 13, I have been pursuing my career as a freelance graphic designer and have accomplished numerous large-scale projects for various businesses and YouTube personalities.
           </p>
         </div>
         <div className = 'relative group'>
