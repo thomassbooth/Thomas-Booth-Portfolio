@@ -13,12 +13,21 @@ const MeClient = () => {
   return (
     <section>
       <div className = 'flex text-lg'>
-        <div className = 'leading-relaxed px-4'>
-          <p className = 'mb-4'>
+        <div className = 'flex flex-col gap-4 leading-relaxed px-4'>
+          <p>
               My name is Thomas Booth and I am a full stack Software Engineer from the UK currently relocating to Dubai.
           </p>
           <p>
-          I have gained extensive expertise in various technology domains, including front-end development, back-end development, and cloud infrastructure. I am currently leveraging Next.js, React, Node.js, Django, and a wide range of AWS services in my work. My skillset transcends the boundaries of the technology industry. During my tenure at Cardiff University, I successfully obtained a First-class degree in Physics and Mathematics. Interestingly, my professional journey commenced at an early stage. Since the age of 13, I have been pursuing my career as a freelance graphic designer and have accomplished numerous large-scale projects for various businesses and YouTube personalities.
+          I have gained extensive expertise in various technology domains, including front-end development, back-end development, and cloud infrastructure. 
+          </p>
+          <p>
+          I am currently leveraging Next.js, React, Node.js, Django, and a wide range of AWS services in my work. 
+          </p>
+          <p>
+          My skillset transcends the boundaries of the technology industry. During my tenure at Cardiff University, I successfully obtained a First-class degree in Physics and Mathematics. 
+          </p>
+          <p>
+          Interestingly, my professional journey commenced at an early stage. Since the age of 13, I have been pursuing my career as a freelance graphic designer and have accomplished numerous large-scale projects for various businesses and YouTube personalities.
           </p>
         </div>
         <div className = 'relative group'>
