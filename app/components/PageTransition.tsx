@@ -23,7 +23,7 @@ const PageTransition = ({ children, width }: {
                     {children}
                   </div>
             </motion.div>
-            ): <div>{children}</div>}
+            ): <>{children}</>}
         </AnimatePresence>
         
     </>
