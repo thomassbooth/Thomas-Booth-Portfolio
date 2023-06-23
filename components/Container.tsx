@@ -1,6 +1,6 @@
 'use client'
 
-import { useGlobalContext } from "../Providers/GlobalProvider";
+import { useGlobalContext } from "../app/Providers/GlobalProvider";
 
 interface ContainerProps {
     children: React.ReactNode;

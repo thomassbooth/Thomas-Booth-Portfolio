@@ -24,15 +24,9 @@ const HomeClient = () => {
   return (
     <AnimatePresence>
       {loading ? (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          
-          transition = {{duration: 3}}
-          className = '' 
-          key = 'loader'>
+        
           <Loading />
-        </motion.div>
+        
       ) : (
       <motion.div
         animate = {{opacity: 1}}>

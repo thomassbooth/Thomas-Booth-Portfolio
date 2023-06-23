@@ -1,12 +1,12 @@
 import { ThemeProvider } from 'next-themes'
-import Container from './components/Container'
-import Navbar from './components/navbar/Navbar'
+import Container from '../components/Container'
+import Navbar from '../components/navbar/Navbar'
 import './globals.css'
 import { Inter, Quicksand } from 'next/font/google'
 import ThemeProviderO from './Providers/ThemeProviderO'
-import Personals from './components/Personals'
+import Personals from '../components/Personals'
 import { GlobalContextProvider } from './Providers/GlobalProvider'
-import OuterContainer from './components/OuterContainer'
+import OuterContainer from '../components/OuterContainer'
 
 const roboto = Quicksand({subsets: ['latin'] })
 const inter = Inter({subsets: ['latin'] })

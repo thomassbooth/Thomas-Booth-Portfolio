@@ -1,10 +1,10 @@
 import React from 'react'
-import PageTransition from '../components/PageTransition'
-import Title from '../components/Title'
-import TechClient from '../components/about/TechClient'
+import PageTransition from '../../components/PageTransition'
+import Title from '../../components/Title'
+import TechClient from '../../components/about/TechClient'
 import Image from 'next/image'
-import Subtitle from '../components/Subtitle'
-import MeClient from '../components/about/MeClient'
+import Subtitle from '../../components/Subtitle'
+import MeClient from '../../components/about/MeClient'
 
 
 const AboutPage = () => {

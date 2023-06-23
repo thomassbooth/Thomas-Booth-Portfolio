@@ -1,7 +1,7 @@
 
 import { Inter } from 'next/font/google'
-import HomeClient from './components/home/HomeClient'
-import PageTransition from './components/PageTransition'
+import HomeClient from '../components/home/HomeClient'
+import PageTransition from '../components/PageTransition'
 
 
 

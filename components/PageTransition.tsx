@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useGlobalContext } from '../Providers/GlobalProvider'
+import { useGlobalContext } from '../app/Providers/GlobalProvider'
 
 const PageTransition = ({ children, width }: {
     children: React.ReactNode
@@ -11,9 +11,11 @@ const PageTransition = ({ children, width }: {
     const { loading } = useGlobalContext()
   return (
     <>
-        <AnimatePresence>
+        
           { !loading 
-          ? (<motion.div
+          ? (
+          <AnimatePresence>
+          <motion.div
                 className = 'flex flex-col items-center'
                 initial = {{ opacity: 0, y: 20}}
                 animate = {{ opacity: 1, y: 0}}
@@ -23,8 +25,9 @@ const PageTransition = ({ children, width }: {
                     {children}
                   </div>
             </motion.div>
+            </AnimatePresence>
             ): <>{children}</>}
-        </AnimatePresence>
+        
         
     </>
   )

@@ -1,7 +1,7 @@
 'use client'
 
 
-import { useGlobalContext } from '../Providers/GlobalProvider'
+import { useGlobalContext } from '../app/Providers/GlobalProvider'
 
 const OuterContainer = ({ children }: { children: React.ReactNode}) => {
 

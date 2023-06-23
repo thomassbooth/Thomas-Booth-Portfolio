@@ -5,7 +5,7 @@ import { FaTwitter, FaLinkedin, FaGithub, } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MdOutlineKeyboardArrowUp } from 'react-icons/md'
-import { useGlobalContext } from '../Providers/GlobalProvider'
+import { useGlobalContext } from '../app/Providers/GlobalProvider'
 
 const Personals = () => {
   const { loading } = useGlobalContext()

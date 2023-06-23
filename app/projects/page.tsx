@@ -1,6 +1,6 @@
 import Link from "next/link"
-import PageTransition from "../components/PageTransition"
-import Title from "../components/Title"
+import PageTransition from "../../components/PageTransition"
+import Title from "../../components/Title"
 
 const ProjectsPage = () => {
   return (

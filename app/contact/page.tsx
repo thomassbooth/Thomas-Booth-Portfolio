@@ -1,6 +1,6 @@
 import React from 'react'
-import PageTransition from '../components/PageTransition'
-import Title from '../components/Title'
+import PageTransition from '../../components/PageTransition'
+import Title from '../../components/Title'
 
 const ContactPage = () => {
   return (
