@@ -17,7 +17,7 @@ function useSlideShowAnimation(setLoading: Dispatch<SetStateAction<boolean>>){
                 ],
                 [
                     '#HELLO', { y: '0%', opacity: 1, filter: "blur(0px)" },
-                    { duration: 2 }
+                    { delay: 0.2, duration: 2 }
                 ],
                 [
                     '#HELLO', { y: '40%', opacity: 0, filter: "blur(0px)" },
