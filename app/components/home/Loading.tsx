@@ -47,7 +47,7 @@ const Loading = () => {
 
   return (
 
-    <div ref = {scope} className = 'w-full h-full flex items-center justify-center text-2xl'>
+    <div ref = {scope} className = 'w-screen h-screen flex items-center justify-center text-2xl'>
         <span id = 'HELLO'>
             YO
         </span>

@@ -27,7 +27,7 @@ const HomeClient = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          layoutId = 'loading'
+          
           transition = {{duration: 3}}
           className = '' 
           key = 'loader'>
@@ -35,7 +35,6 @@ const HomeClient = () => {
         </motion.div>
       ) : (
       <motion.div
-        layoutId = 'loading'
         animate = {{opacity: 1}}>
           <Title line1 = {'Hi.'} line2 = 'I&#39;m Thomas Booth.' />
           <p className = 'text-left mt-5 text-lg'>

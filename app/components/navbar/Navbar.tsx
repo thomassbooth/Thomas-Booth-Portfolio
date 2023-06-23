@@ -2,11 +2,12 @@
 
 
 import Link from "next/link"
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { usePathname } from "next/navigation";
 import DarkmodeIcon from "./DarkmodeIcon";
 import Logo from "./Logo";
 import { Inter } from "next/font/google";
+import { useGlobalContext } from "@/app/Providers/GlobalProvider";
 
 
 
@@ -21,8 +22,12 @@ const links = [
 
 const Navbar = () => {
   const path = usePathname();
-  
+  const { loading } = useGlobalContext()
+
   return (
+    <div>
+      { !loading && (
+    
     <motion.header className= {`${inter.className} z-10`}
       initial={{ y: '50%', opacity: 0 }}
       animate={{ y: '0%', opacity: 1 }}
@@ -60,7 +65,8 @@ const Navbar = () => {
         </nav>
       </div>
     </motion.header>
-  )
+  )}
+  </div>)
 }
 
 export default Navbar
