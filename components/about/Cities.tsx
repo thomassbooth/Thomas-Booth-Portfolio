@@ -67,6 +67,7 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
+        <span>{children} </span>
       </motion.div>
     </div>
   );
@@ -75,8 +76,8 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 export default function Cities() {
   return (
     <section className = 'py-16 font-extrabold'>
-      <ParallaxText baseVelocity={-1}> DUBAI LONDON</ParallaxText>
-      <ParallaxText baseVelocity={1}>LONDON DUBAI </ParallaxText>
+      <ParallaxText baseVelocity={-1}> DUBAI LONDON </ParallaxText>
+      <ParallaxText baseVelocity={1}> LONDON DUBAI </ParallaxText>
     </section>
   );
 }
