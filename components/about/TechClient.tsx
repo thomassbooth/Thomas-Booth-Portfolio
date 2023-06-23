@@ -1,22 +1,20 @@
 'use client'
 
 import { TbBrandNextjs } from 'react-icons/tb'
-import { SiDjango, SiFastapi, SiKubernetes, SiMongodb, SiPostgresql, SiRedis } from 'react-icons/si'
+import { SiDjango, SiExpress, SiFastapi, SiKubernetes, SiMongodb, SiPostgresql, SiRedis } from 'react-icons/si'
 import { FaNodeJs, FaReact, FaLaravel, FaDocker, FaAws } from 'react-icons/fa'
 import ListItem from './ListItem'
 import List from './List'
 
 const TechClient = () => {
   return (
-    <div className = ''>
-        <p className = 'm-8 text-lg'>
-            I enjoy working with cutting edge technology and im permenatly chasing the latest tech to give users and myself a more forfilling experience.
-        </p>
+    <div className = 'mt-5'>
         <article className = 'flex flex-row justify-evenly'>
             <List title = 'Typescript & Javascript' direction = 'up'>
                 <ListItem tech = 'NextJS' icon = {TbBrandNextjs}/>
                 <ListItem tech = 'NodeJS' icon = {FaNodeJs}/>
                 <ListItem tech = 'ReactJS' icon = {FaReact}/>
+                <ListItem tech = 'ExpressJS' icon = {SiExpress}/>
             </List>
             <List title = 'Python' direction = 'down'>
                 <ListItem tech = 'Django' icon = {SiDjango}/>

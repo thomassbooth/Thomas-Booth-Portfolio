@@ -15,13 +15,10 @@ const MeClient = () => {
       <div className = 'flex text-lg'>
         <div className = 'flex flex-col gap-4 leading-relaxed px-4'>
           <p>
-              My name is Thomas Booth and I am a full stack Software Engineer from the UK currently relocating to Dubai.
+              My name is Thomas Booth and I am a full stack Software Engineer from <span className = 'font-semibold'>London</span> currently relocating to <span className = 'font-semibold'>Dubai.</span>
           </p>
           <p>
           I have gained extensive expertise in various technology domains, including front-end development, back-end development, and cloud infrastructure. 
-          </p>
-          <p>
-          I am currently leveraging Next.js, React, Node.js, Django, and a wide range of AWS services in my work. 
           </p>
           <p>
           My skillset transcends the boundaries of the technology industry. During my tenure at Cardiff University, I successfully obtained a First-class degree in Physics and Mathematics. 
@@ -35,8 +32,8 @@ const MeClient = () => {
             <Image src = '/images/dummyMe.jpg' 
             className = 'shadow-sm'
             alt = 'Pick of me :D'
-            width={500}
-            height={500}/>
+            width={600}
+            height={600}/>
         </div>
       </div>
       <div className = 'flex flex-col w-screen text-6xl opacity-10'>
