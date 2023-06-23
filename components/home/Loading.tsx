@@ -24,8 +24,8 @@ function useSlideShowAnimation(setLoading: Dispatch<SetStateAction<boolean>>){
                     { delay: 0.5, duration: 2}
                 ],
                 [
-                    'div', { height: 0},
-                    { duration: 0.5, ease: 'easeOut'}
+                    'div', {width: 0},
+                    { duration: 1, ease: 'easeOut'}
                 ]
             ])
             setLoading(false)
@@ -42,7 +42,6 @@ const Loading = () => {
 
     const { setLoading } = useGlobalContext()
     const scope = useSlideShowAnimation(setLoading)
-    const [closed, setClosed] = useState('open')
 
   return (
     <div ref = {scope} >
