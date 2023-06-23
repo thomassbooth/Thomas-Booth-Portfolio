@@ -45,7 +45,7 @@ const Loading = () => {
 
   return (
     <div ref = {scope} >
-        <div className = 'bg-black opacity-95 w-screen h-screen flex flex-col items-center text-center justify-center text-2xl'
+        <div className = 'bg-black opacity-95 w-screen h-screen flex flex-col items-center text-center justify-center font-semibold text-2xl'
             >
             <span id = 'HELLO' className = 'opacity-0 text-pastel-white -translate-y-38'>
             Sit back... relax
