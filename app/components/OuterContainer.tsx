@@ -1,4 +1,6 @@
 'use client'
+
+
 import { useGlobalContext } from '../Providers/GlobalProvider'
 
 const OuterContainer = ({ children }: { children: React.ReactNode}) => {
@@ -10,7 +12,7 @@ const OuterContainer = ({ children }: { children: React.ReactNode}) => {
     { !loading 
     ? (<div className = 'py-20 transition-colors text-pastel-brown-dark sm:px-6 md:px-20 2xl:px-32'>
         {children}
-    </div>)
+        </div>)
     : (<div>
         {children}
     </div>)

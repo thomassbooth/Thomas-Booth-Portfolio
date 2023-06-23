@@ -24,8 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} tracking-wide w-screen overflow-x-hidden`}>
-        <OuterContainer>
-          <GlobalContextProvider>
+        <GlobalContextProvider>
+          <OuterContainer>
             <ThemeProviderO>
               <Navbar />
               <Personals />
@@ -33,8 +33,8 @@ export default function RootLayout({
                 {children}
               </Container>   
             </ThemeProviderO>    
-          </GlobalContextProvider>   
-        </OuterContainer>
+          </OuterContainer>
+        </GlobalContextProvider>   
       </body>
     </html>
   )
