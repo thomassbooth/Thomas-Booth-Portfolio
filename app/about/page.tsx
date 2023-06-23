@@ -9,7 +9,7 @@ import MeClient from '../../components/about/MeClient'
 
 const AboutPage = () => {
   return (
-  <PageTransition width = 'w-4/6'>
+  <PageTransition width = 'w-4/5'>
     <Title title = 'About me' pageNo = {'02'} slideDirection = {'up'}/>
     <MeClient/>
     <Subtitle title = {'My Tech Stack'} visable = {{y: '0%'}} hidden = {{y: '30%'}}/>

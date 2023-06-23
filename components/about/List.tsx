@@ -12,7 +12,7 @@ const List: React.FC<listProps> = ({ children, title, direction }) => {
 
   return (
     <div className = 'flex flex-col items-center'>
-        <h3 className = 'font-medium tracking-wider text-lg'>{title}</h3>
+        <h3 className = 'font-semibold tracking-wider text-lg'>{title}</h3>
         <motion.ul 
             initial = 'hidden'
             whileInView="visible"

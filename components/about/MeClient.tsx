@@ -30,7 +30,6 @@ const MeClient = () => {
             height={500}/>
         </div>
       </div>
-      
       <div className = 'flex flex-col w-screen text-6xl opacity-10'>
         <Cities />
       </div>

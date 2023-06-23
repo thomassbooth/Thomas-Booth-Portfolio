@@ -15,7 +15,7 @@ const Subtitle: React.FC<subtitleProps> = ({title, visable, hidden}) => {
   return (
     <>
         <motion.h2 ref = {ref}
-            className = 'font-semibold tracking-wider text-xl m-2'
+            className = 'font-bold text-4xl mb-10 flex items-center tracking-wider gap-4'
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
