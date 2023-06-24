@@ -37,7 +37,7 @@ const HomeClient = () => {
           <motion.div
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}>
-          <Link href = '/about' className = 'text-pastel-red flex items-center gap-2 mt-10 font-medium text-lg hover:underline'>
+          <Link href = '/about' className = 'text-pastel-blue-dark flex items-center gap-2 mt-10 font-medium text-lg hover:underline'>
               Find out more
               <motion.span 
                   className = 'gap-2 cursor-pointer'
