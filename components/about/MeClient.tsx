@@ -27,11 +27,11 @@ const MeClient = () => {
           Interestingly, my professional journey commenced at an early stage. Since the age of 13, I had been pursuing a career freelance graphic designer and have accomplished numerous large-scale projects for various businesses and YouTube personalities.
           </p>
         </div>
-        <Image src = '/images/dummyMe.jpg' 
-            className = 'shadow-sm'
+        <Image src = '/images/thomasbooth01.jpeg' 
+            className = 'shadow-sm m-5'
             alt = 'Pick of me :D'
-            width={600}
-            height={600}/>
+            width={400}
+            height={400}/>
       </div>
       <div className = 'flex flex-col w-screen text-6xl opacity-10'>
         <Cities />
