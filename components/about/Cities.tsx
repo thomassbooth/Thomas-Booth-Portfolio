@@ -68,6 +68,8 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
+        <span>{children} </span>
+        <span>{children} </span>
       </motion.div>
     </div>
   );
@@ -75,9 +77,9 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 
 export default function Cities() {
   return (
-    <section className = '2xl:py-40 py-20 font-extrabold'>
-      <ParallaxText baseVelocity={-1}> DUBAI LONDON </ParallaxText>
-      <ParallaxText baseVelocity={1}> LONDON DUBAI </ParallaxText>
+    <section className = '2xl:py-80 py-20 font-extrabold'>
+      <ParallaxText baseVelocity={-0.5}> DUBAI LONDON </ParallaxText>
+      <ParallaxText baseVelocity={0.5}> LONDON DUBAI </ParallaxText>
     </section>
   );
 }

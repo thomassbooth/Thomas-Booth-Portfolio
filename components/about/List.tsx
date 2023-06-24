@@ -12,7 +12,17 @@ const List: React.FC<listProps> = ({ children, title, direction }) => {
 
   return (
     <div className = 'flex flex-col items-center'>
-        <h3 className = 'font-semibold tracking-wider text-lg'>{title}</h3>
+        <motion.h3
+          initial = 'hidden'
+          whileInView = 'visible'
+          variants = {{
+            hidden: {opacity: 0, y: '-40%'},
+            visible: {opacity: 1, y: '0'}
+          }}
+          transition = {{delay: 0.8}}
+          className = 'font-semibold tracking-wider text-lg'>
+            {title}
+          </motion.h3>
         <motion.ul 
             initial = 'hidden'
             whileInView="visible"
