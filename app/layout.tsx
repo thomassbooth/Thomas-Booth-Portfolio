@@ -26,13 +26,11 @@ export default function RootLayout({
       <body className={`${inter.className} tracking-wide w-screen overflow-x-hidden`}>
         <GlobalContextProvider>
           <OuterContainer>
-            <ThemeProviderO>
-              <Navbar />
-              <Personals />
-              <Container>
-                {children}
-              </Container>   
-            </ThemeProviderO>    
+            <Navbar />
+            <Personals />
+            <Container>
+              {children}
+            </Container>   
           </OuterContainer>
         </GlobalContextProvider>   
       </body>
