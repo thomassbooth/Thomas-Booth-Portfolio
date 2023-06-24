@@ -77,7 +77,7 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 
 export default function Cities() {
   return (
-    <section className = '2xl:py-80 py-20 font-extrabold'>
+    <section className = '2xl:py-44 py-20 font-extrabold'>
       <ParallaxText baseVelocity={-0.5}> DUBAI LONDON </ParallaxText>
       <ParallaxText baseVelocity={0.5}> LONDON DUBAI </ParallaxText>
     </section>
