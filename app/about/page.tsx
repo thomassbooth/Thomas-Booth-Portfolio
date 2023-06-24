@@ -7,6 +7,11 @@ import Subtitle from '../../components/Subtitle'
 import MeClient from '../../components/about/MeClient'
 
 
+export const metadata = {
+  title: 'About - Thomas Booth',
+  description: 'Professional portfolio designed and written by Thomas Booth.',
+}
+
 const AboutPage = () => {
   return (
   <PageTransition width = 'w-4/5'>

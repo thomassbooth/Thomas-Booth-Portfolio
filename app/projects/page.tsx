@@ -2,6 +2,11 @@ import Link from "next/link"
 import PageTransition from "../../components/PageTransition"
 import Title from "../../components/Title"
 
+export const metadata = {
+  title: 'Projects - Thomas Booth',
+  description: 'Professional portfolio designed and written by Thomas Booth.',
+}
+
 const ProjectsPage = () => {
   return (
     <PageTransition width = 'w-4/5'>

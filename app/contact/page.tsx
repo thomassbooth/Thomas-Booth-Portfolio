@@ -2,6 +2,11 @@ import React from 'react'
 import PageTransition from '../../components/PageTransition'
 import Title from '../../components/Title'
 
+export const metadata = {
+  title: 'Contact - Thomas Booth',
+  description: 'Professional portfolio designed and written by Thomas Booth.',
+}
+
 const ContactPage = () => {
   return (
     <PageTransition>
