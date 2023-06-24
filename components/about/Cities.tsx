@@ -63,7 +63,8 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
    */
   return (
     <div className="flex">
-      <motion.div className="flex flex-row gap-2" style={{ x }}>
+      <motion.div className="flex flex-row gap-2" style={{ x: -500 }}>
+        <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
