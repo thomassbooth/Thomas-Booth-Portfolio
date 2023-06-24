@@ -12,7 +12,7 @@ const MeClient = () => {
   const { scrollY, scrollYProgress } = useScroll()
   return (
     <section>
-      <div className = 'flex text-lg'>
+      <div className = 'flex text-lg items-center'>
         <div className = 'flex flex-col gap-4 leading-relaxed px-4'>
           <p>
               My name is Thomas Booth and I am a full stack Software Engineer from <span className = 'font-semibold line-through'>London</span> currently relocating to <span className = 'font-semibold'>Dubai.</span>
@@ -27,14 +27,11 @@ const MeClient = () => {
           Interestingly, my professional journey commenced at an early stage. Since the age of 13, I had been pursuing a career freelance graphic designer and have accomplished numerous large-scale projects for various businesses and YouTube personalities.
           </p>
         </div>
-        <div className = 'relative group'>
-          <div className = 'group-hover:translate-y-1 group-hover:translate-x-1 transition-all absolute border-2 rounded-md border-pastel-brown-light transform translate-x-2 translate-y-2 -z-10'/>
-            <Image src = '/images/dummyMe.jpg' 
+        <Image src = '/images/dummyMe.jpg' 
             className = 'shadow-sm'
             alt = 'Pick of me :D'
             width={600}
             height={600}/>
-        </div>
       </div>
       <div className = 'flex flex-col w-screen text-6xl opacity-10'>
         <Cities />
