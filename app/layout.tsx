@@ -7,6 +7,7 @@ import ThemeProviderO from './Providers/ThemeProviderO'
 import Personals from '../components/Personals'
 import { GlobalContextProvider } from './Providers/GlobalProvider'
 import OuterContainer from '../components/OuterContainer'
+import Grain from '@/components/Grain'
 
 const roboto = Quicksand({subsets: ['latin'] })
 const inter = Inter({subsets: ['latin'] })
@@ -24,8 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} tracking-wide w-screen overflow-x-hidden`}>
-        <div className = 'noiseOverlay'/>
         <GlobalContextProvider>
+          <Grain/>
           <OuterContainer>
             <Navbar />
             <Personals />
