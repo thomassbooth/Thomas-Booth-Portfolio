@@ -4,6 +4,17 @@
 
 body {
     background: radial-gradient(#EEE9DA, #9e767647);
+    position: relative;
+}
+
+.noiseOverlay {
+    background-image: url('/images/noise.png');
+    background-repeat: repeat-x repeat-y;
+    mix-blend-mode: overlay;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.04
 }
 
 body::-webkit-scrollbar {

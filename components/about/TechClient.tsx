@@ -3,13 +3,21 @@
 import { TbBrandNextjs } from 'react-icons/tb'
 import { SiDjango, SiExpress, SiFastapi, SiKubernetes, SiMongodb, SiPostgresql, SiRedis } from 'react-icons/si'
 import { FaNodeJs, FaReact, FaLaravel, FaDocker, FaAws } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 import ListItem from './ListItem'
 import List from './List'
 
 const TechClient = () => {
   return (
-    <div className = 'mt-5'>
-        <article className = 'flex flex-row justify-evenly'>
+    <div className = 'mt-8'>
+        <motion.p 
+            initial = {{opacity: 0, x: '-20%'}}
+            animate= {{opacity: 1, x: '0%'}}
+            transition = {{delay: 0.5, duration: 0.5}}
+            className = 'mb-8'>
+            Although my experience spans a broad range of technologies, I have honed my expertise predominantly in the following key areas:
+        </motion.p>
+        <article className = 'flex flex-wrap flex-row justify-between '>
             <List title = 'Typescript & Javascript' direction = 'up'>
                 <ListItem tech = 'NextJS' icon = {TbBrandNextjs}/>
                 <ListItem tech = 'NodeJS' icon = {FaNodeJs}/>

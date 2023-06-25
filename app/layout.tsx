@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} tracking-wide w-screen overflow-x-hidden`}>
+        <div className = 'noiseOverlay'/>
         <GlobalContextProvider>
           <OuterContainer>
             <Navbar />
