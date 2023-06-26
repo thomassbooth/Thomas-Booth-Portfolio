@@ -5,6 +5,7 @@ import TechClient from '../../components/about/TechClient'
 import Image from 'next/image'
 import Subtitle from '../../components/Subtitle'
 import MeClient from '../../components/about/MeClient'
+import WorkClient from '@/components/about/WorkClient'
 
 
 export const metadata = {
@@ -20,7 +21,7 @@ const AboutPage = () => {
     <Subtitle title = {'My Tech Stack'} visable = {{y: '0%'}} hidden = {{y: '30%'}}/>
     <TechClient/>
     <Subtitle title = {'Where Ive Worked'} visable = {{x: '0%'}} hidden = {{x: '30%'}}/>
-    {/* <HistoryClient/> */}
+    <WorkClient/>
   </PageTransition>
   )
 }

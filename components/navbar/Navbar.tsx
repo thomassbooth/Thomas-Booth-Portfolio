@@ -48,7 +48,7 @@ const Navbar = () => {
                       ((link.href === path) || (path.includes('/projects') && link.href === '/projects')) && (
                         <motion.span
                           layoutId="underline"
-                          className="group-hover:bg-pastel-blue-dark-100 transition-colors duration-500 absolute left-0 top-full block mt-1 h-[1.5px] rounded-full w-full bg-pastel-brown-dark"
+                          className="group-hover:bg-pastel-blue-dark-100 transition-colors duration-500 absolute left-0 top-full block mt-1 h-[1px] rounded-full w-full bg-pastel-brown-dark"
                         />
                       )}
                       {link.label}
