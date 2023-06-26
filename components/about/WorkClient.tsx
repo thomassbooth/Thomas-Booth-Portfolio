@@ -88,12 +88,12 @@ const WorkClient = () => {
         <AnimatePresence mode = 'wait'>
         <motion.div
             key={current}
-            
+            whileInView="in"
+            viewport={{ once: true }}
             initial="initial"
             animate="in"
             exit="out"
             variants={variants}
-            
             className = 'text-xl'>
             <h2><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer'>@{experience[current].company}</span></h2>
             <h3 className = {`${RobotoMono.className} text-sm text-pastel-brown-light mt-1`}>{experience[current].date}</h3>
