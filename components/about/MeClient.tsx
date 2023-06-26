@@ -30,7 +30,7 @@ const MeClient = () => {
         <Image src = '/images/thomasbooth01.jpeg' 
             className = 'translate-x-10 shadow-md m-5 border-2 rounded-sm grayscale hover:grayscale-0 hover:translate-y-2 transition-all duration-500'
             alt = 'Pick of me :D'
-            width={400}
+            width={350}
             height={400}/>
       </div>
       <div className = 'flex flex-col w-screen text-6xl opacity-10'>
