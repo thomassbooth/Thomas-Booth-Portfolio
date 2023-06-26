@@ -1,16 +1,24 @@
 'use client'
 
 import React, { useCallback, useState } from 'react'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { Roboto_Mono } from 'next/font/google'
 
 const RobotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] })
+
+const variants = {
+    initial: { x: -50, opacity: 0 },
+    in: { x: 0, opacity: 1 },
+    out: { x: 50, opacity: 0 }
+  };
+
 const experience = [
     {
         id: 0,
         company: 'TSL Media',
         title: 'Full stack software engineer',
-        date: '',
+        link: '',
+        date: 'May 2023 - Present',
         active: true,
         description: 'WORKED AT TSL'
     },
@@ -18,7 +26,8 @@ const experience = [
         id: 1,
         company: 'Codelocks',
         title: 'Software Engineer',
-        date: '',
+        link: '',
+        date: 'Mar 2022 - May 2023',
         active: false,
         description: 'WORKED AT CODELOCKS'
     },
@@ -26,7 +35,7 @@ const experience = [
         id: 2,
         company: 'SureCloud',
         title: 'Application Developer',
-        date: '',
+        date: 'Sept 2021 - Mar 2022',
         active: false,
         description: 'WORKED AT SURECLOUD'
     },
@@ -34,7 +43,8 @@ const experience = [
         id: 3,
         company: 'Trace2o',
         title: 'Chemical Production Technician',
-        date: '',
+        link: '',
+        date: '2017 - Sept 2021',
         active: false,
         description: 'WORKED AT TRACE2O'
     },
@@ -42,6 +52,7 @@ const experience = [
         id: 4,
         company: 'Freelance',
         title: 'Graphic Designer',
+        link: '',
         date: '',
         active: false,
         description: 'WORKED AS FREELANCE GRAPHIC DESIGNER'
@@ -74,9 +85,20 @@ const WorkClient = () => {
                     )
                 })}
         </ul>
-        <div>
-            {experience[current].description}
-        </div>
+        <AnimatePresence mode = 'wait'>
+        <motion.div
+            key={current}
+            
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={variants}
+            
+            className = 'text-xl'>
+            <h2><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer'>@{experience[current].company}</span></h2>
+            <h3 className = {`${RobotoMono.className} text-sm text-pastel-brown-light mt-1`}>{experience[current].date}</h3>
+        </motion.div>
+        </AnimatePresence>
 
     </div>
   )
