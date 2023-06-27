@@ -8,6 +8,7 @@ import Title from './HomeTitle'
 import { useEffect, useState } from 'react'
 import Loading from './Loading'
 import { useGlobalContext } from '@/app/Providers/GlobalProvider'
+import Image from 'next/image'
 
 const HomeClient = () => {
 
@@ -29,6 +30,7 @@ const HomeClient = () => {
         
       ) : (
       <motion.div
+        
         animate = {{opacity: 1}}>
           <Title line1 = {'Hi.'} line2 = 'I&#39;m Thomas Booth.' />
           <p className = 'text-left mt-5 text-lg'>
@@ -54,6 +56,7 @@ const HomeClient = () => {
               </motion.span>
           </Link>
           </motion.div>
+          <Image className = '-z-10 opacity-10' src = '/polygon-scatter-haikei.svg' fill alt = ''/>
       </motion.div>
       )}
     </AnimatePresence>
