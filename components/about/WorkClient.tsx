@@ -20,7 +20,9 @@ const experience = [
         link: '',
         date: 'May 2023 - Present',
         active: true,
-        description: 'WORKED AT TSL'
+        description: {
+            
+        }
     },
     {
         id: 1,
@@ -29,7 +31,9 @@ const experience = [
         link: '',
         date: 'Mar 2022 - May 2023',
         active: false,
-        description: 'WORKED AT CODELOCKS'
+        description: {
+            
+        }
     },
     {
         id: 2,
@@ -37,7 +41,9 @@ const experience = [
         title: 'Application Developer',
         date: 'Sept 2021 - Mar 2022',
         active: false,
-        description: 'WORKED AT SURECLOUD'
+        description: {
+            
+        }
     },
     {
         id: 3,
@@ -46,7 +52,9 @@ const experience = [
         link: '',
         date: '2017 - Sept 2021',
         active: false,
-        description: 'WORKED AT TRACE2O'
+        description: {
+            
+        }
     },
     {
         id: 4,
@@ -55,7 +63,9 @@ const experience = [
         link: '',
         date: '',
         active: false,
-        description: 'WORKED AS FREELANCE GRAPHIC DESIGNER'
+        description: {
+            
+        }
     }
 ]
 
@@ -68,8 +78,8 @@ const WorkClient = () => {
     }, [])
 
   return (
-    <div className = 'mt-16 flex'>
-        <ul className = 'flex flex-col ml-4 border-l-2 border-pastel-brown-light/20'>
+    <div className = 'mt-16 flex '>
+            <ul className = 'flex flex-col ml-4 mt-16 border-l-2 border-pastel-brown-light/20'>
             {experience.map((job, index) => {
                 return (
                     <li onClick = {() => changeJob(index)} 
@@ -84,20 +94,21 @@ const WorkClient = () => {
                     </li>
                     )
                 })}
-        </ul>
+            </ul>
+        
         <AnimatePresence mode = 'wait'>
-        <motion.div
-            key={current}
-            whileInView="in"
-            viewport={{ once: true }}
-            initial="initial"
-            animate="in"
-            exit="out"
-            variants={variants}
-            className = 'text-xl'>
-            <h2><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer'>@{experience[current].company}</span></h2>
-            <h3 className = {`${RobotoMono.className} text-sm text-pastel-brown-light mt-1`}>{experience[current].date}</h3>
-        </motion.div>
+            <motion.div
+                key={current}
+                whileInView="in"
+                viewport={{ once: true }}
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={variants}
+                className = 'text-xl'>
+                <h2><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer'>@{experience[current].company}</span></h2>
+                <h3 className = {`${RobotoMono.className} text-sm text-pastel-brown-light mt-1`}>{experience[current].date}</h3>
+            </motion.div>
         </AnimatePresence>
 
     </div>
