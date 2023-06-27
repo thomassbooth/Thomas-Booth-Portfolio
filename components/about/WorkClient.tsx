@@ -3,6 +3,7 @@
 import React, { useCallback, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Roboto_Mono } from 'next/font/google'
+import WorkDescription from './WorkDescription'
 
 const RobotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] })
 
@@ -17,55 +18,67 @@ const experience = [
         id: 0,
         company: 'TSL Media',
         title: 'Full stack software engineer',
-        link: '',
+        link: 'https://tslmedia.co.uk/',
         date: 'May 2023 - Present',
         active: true,
-        description: {
-            
-        }
+        description: [
+            'Architechting and developing a client management system.',
+            'Involved in lead generation projects automating turning user data into legal cases for numerous solicitors.',
+            'Typescript, Python, React, NextJS, Redux, FastAPI, AWS, Terraform'
+        ]
     },
     {
         id: 1,
         company: 'Codelocks',
         title: 'Software Engineer',
-        link: '',
+        link: 'https://www.codelocks.co.uk/',
         date: 'Mar 2022 - May 2023',
         active: false,
-        description: {
-            
-        }
+        description: [
+            'Architechted and built a scalable API for a BLE lock management app, securing over £1 mil in product presales.',
+            'Developed and integrated a near real-time serverless billign system for web apps and high volume api customers, increasing web portal revenue by 30%.',
+            'Development on an inhouse CMS building and administration system for the company intranet.',
+            'Facilitated the seamless upgrade of an app backend from python 2 to 3 and decoupling crutial encryption algorithms to serverless functions.',
+            'NodeJS, Typescript, Python, PHP, Laravel, React, Django, Laravel, AWS'
+        ]
     },
     {
         id: 2,
         company: 'SureCloud',
         title: 'Application Developer',
+        link: 'https://www.surecloud.com/',
         date: 'Sept 2021 - Mar 2022',
         active: false,
-        description: {
-            
-        }
+        description: [
+            'Designed and developed user interfaces for GRC management tracking tools for clients such as M&S, Carrefour and BMW.',
+            'Lead the design and development mentoring 2 junior developers on an internal IT Assests management tracker application.',
+            'Took part in Project, Risk management and GRC training.',
+            'React, NodeJS, Vanilla Javascript'
+        ]
     },
     {
         id: 3,
         company: 'Trace2o',
         title: 'Chemical Production Technician',
-        link: '',
+        link: 'https://www.trace2o.com/',
         date: '2017 - Sept 2021',
         active: false,
-        description: {
-            
-        }
+        description: [
+            'Research project with UNICEF x Global Good Foundation, using photo detectors to detect e-coli in water.',
+            'General lab work and chemical testing.'
+        ]
     },
     {
         id: 4,
         company: 'Freelance',
         title: 'Graphic Designer',
-        link: '',
-        date: '',
+        link: 'https://www.behance.net/thomasboot034a/projects',
+        date: '2010 - 2017',
         active: false,
-        description: {
-            
-        }
+        description: [
+            'Delivered many design projects to youtube personalities and companies.',
+            'Portfolio in the link above!'
+        ]
     }
 ]
 
@@ -78,7 +91,8 @@ const WorkClient = () => {
     }, [])
 
   return (
-    <div className = 'mt-16 flex '>
+    <div className = 'mt-16 flex gap-4'>
+        <div>
             <ul className = 'flex flex-col ml-4 mt-16 border-l-2 border-pastel-brown-light/20'>
             {experience.map((job, index) => {
                 return (
@@ -95,7 +109,7 @@ const WorkClient = () => {
                     )
                 })}
             </ul>
-        
+        </div>
         <AnimatePresence mode = 'wait'>
             <motion.div
                 key={current}
@@ -106,8 +120,17 @@ const WorkClient = () => {
                 exit="out"
                 variants={variants}
                 className = 'text-xl'>
-                <h2><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer'>@{experience[current].company}</span></h2>
+                <h2><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer' 
+                    onClick = {() => window.open(experience[current].link)}>
+                    @{experience[current].company}
+                </span></h2>
                 <h3 className = {`${RobotoMono.className} text-sm text-pastel-brown-light mt-1`}>{experience[current].date}</h3>
+                <div className = 'flex flex-col gap-4 mt-5 text-sm font-medium'>
+                    {experience[current].description.map((desc, index) => {
+                        return (<WorkDescription key = {index} description = {desc}/>
+                        )
+                    })}
+                </div>
             </motion.div>
         </AnimatePresence>
 
