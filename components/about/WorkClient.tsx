@@ -118,14 +118,13 @@ const WorkClient = () => {
                 initial="initial"
                 animate="in"
                 exit="out"
-                variants={variants}
-                className = 'text-xl'>
-                <h2><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer' 
+                variants={variants}>
+                <h2 className = 'text-2xl'><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer' 
                     onClick = {() => window.open(experience[current].link)}>
                     @{experience[current].company}
                 </span></h2>
                 <h3 className = {`${RobotoMono.className} text-sm text-pastel-brown-light mt-1`}>{experience[current].date}</h3>
-                <div className = 'flex flex-col gap-4 mt-5 text-sm font-medium'>
+                <div className = 'flex flex-col gap-4 mt-5 font-medium'>
                     {experience[current].description.map((desc, index) => {
                         return (<WorkDescription key = {index} description = {desc}/>
                         )
