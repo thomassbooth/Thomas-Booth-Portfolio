@@ -133,7 +133,7 @@ const WorkClient = () => {
                 </div>
             </motion.div>
         </AnimatePresence>
-        <Image className = '-z-10 left-0 bottom-0 translate-y-44' fill src = '/wave-haikei.svg' alt = 'wave'/>
+        <Image className = '-z-10 left-0 bottom-0 translate-y-44 opacity-20' fill src = '/wave-haikei.svg' alt = 'wave'/>
     </div>
   )
 }
