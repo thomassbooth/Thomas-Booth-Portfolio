@@ -119,6 +119,7 @@ const WorkClient = () => {
                 initial="initial"
                 animate="in"
                 exit="out"
+                className = 'h-[75vh]'
                 variants={variants}>
                 <h2 className = 'text-2xl'><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer' 
                     onClick = {() => window.open(experience[current].link)}>
@@ -133,7 +134,6 @@ const WorkClient = () => {
                 </div>
             </motion.div>
         </AnimatePresence>
-        <Image className = '-z-10 left-0 bottom-0 translate-y-24 opacity-20' priority fill src = '/wave-haikei.svg' alt = 'wave'/>
     </div>
   )
 }
