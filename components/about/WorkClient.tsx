@@ -4,6 +4,7 @@ import React, { useCallback, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Roboto_Mono } from 'next/font/google'
 import WorkDescription from './WorkDescription'
+import Image from 'next/image'
 
 const RobotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] })
 
@@ -132,7 +133,7 @@ const WorkClient = () => {
                 </div>
             </motion.div>
         </AnimatePresence>
-
+        <Image className = '-z-10 left-0 bottom-0 translate-y-44' fill src = '/wave-haikei.svg' alt = 'wave'/>
     </div>
   )
 }
