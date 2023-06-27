@@ -102,7 +102,7 @@ const WorkClient = () => {
                         {current === index && <motion.div 
                             layoutId="selected"
                             className = ' bg-pastel-brown-dark h-10 w-[2px] rounded-full'/>}
-                        <h3 className = {`${RobotoMono.className} ${current === index ? 'text-pastel-brown-dark' : 'text-pastel-brown-light/50'} tracking-normal ml-5 text-sm transition-all`}>
+                        <h3 className = {`${RobotoMono.className} ${current === index ? 'text-pastel-brown-dark' : 'text-pastel-brown-light/50'} tracking-normal ml-5  transition-all`}>
                             {job.company}
                         </h3>
                     </li>
