@@ -103,7 +103,7 @@ const WorkClient = () => {
     }, [])
 
   return (
-    <div className = 'mt-16 flex gap-4 h-[400px]'>
+    <div className = 'mt-16 flex gap-4 h-[60vh]'>
         <motion.div
             initial="hidden"
             whileInView="visible"
