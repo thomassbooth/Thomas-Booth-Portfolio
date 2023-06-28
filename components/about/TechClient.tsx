@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const TechClient = () => {
   return (
-    <div className = 'mt-8 mb-40 md:h-[70vh]'>
+    <div  className = 'mt-8 mb-40 md:h-[70vh]'>
         <motion.p 
             initial = {{opacity: 0, x: '-20%'}}
             animate= {{opacity: 1, x: '0%'}}
