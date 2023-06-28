@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Subtitle from '../../components/Subtitle'
 import MeClient from '../../components/about/MeClient'
 import WorkClient from '@/components/about/WorkClient'
+import EducationClient from '@/components/about/EducationClient'
 
 
 export const metadata = {
@@ -22,7 +23,8 @@ const AboutPage = () => {
     <TechClient/>
     <Subtitle title = {'My Professional Journey'} visable = {{x: '0%'}} hidden = {{x: '30%'}}/>
     <WorkClient/>
-    <Subtitle title = {'Education'} visable = {{x: '0%'}} hidden = {{y: '40%'}}/>
+    <Subtitle title = {'Education'} visable = {{y: '0%'}} hidden = {{y: '40%'}}/>
+    <EducationClient/>
   </PageTransition>
   )
 }

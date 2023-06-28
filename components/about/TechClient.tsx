@@ -6,10 +6,11 @@ import { FaNodeJs, FaReact, FaLaravel, FaDocker, FaAws } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import ListItem from './ListItem'
 import List from './List'
+import Image from 'next/image'
 
 const TechClient = () => {
   return (
-    <div className = 'mt-8 mb-40 h-[75vh]'>
+    <div className = 'mt-8 mb-40 h-[70vh]'>
         <motion.p 
             initial = {{opacity: 0, x: '-20%'}}
             animate= {{opacity: 1, x: '0%'}}
@@ -40,7 +41,7 @@ const TechClient = () => {
                 <ListItem tech = 'Kubernetes' icon = {SiKubernetes} />
             </List>
         </article>
-
+        <Image className = 'translate-y-20 opacity-20' src = '/wave-haikei.svg' alt = 'wave' fill />
     </div>
   )
 }

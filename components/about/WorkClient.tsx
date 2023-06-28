@@ -92,7 +92,7 @@ const WorkClient = () => {
     }, [])
 
   return (
-    <div className = 'mt-16 flex gap-4 h-[75vh]'>
+    <div className = 'mt-16 flex gap-4 h-[70vh]'>
         <div>
             <ul className = 'flex flex-col ml-4 mt-16 border-l-2 border-pastel-brown-light/20'>
             {experience.map((job, index) => {
