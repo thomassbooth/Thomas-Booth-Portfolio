@@ -7,7 +7,7 @@ const Grain = () => {
   const { loading } = useGlobalContext()
 
   return !loading && (
-    <div className = 'noiseOverlay'/>
+    <div className = 'noiseOverlay w-screen'/>
   )
 }
 
