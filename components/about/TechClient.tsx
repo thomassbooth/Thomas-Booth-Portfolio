@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import ListItem from './ListItem'
 import List from './List'
 import Image from 'next/image'
+import { Link } from 'react-scroll'
 
 const TechClient = () => {
   return (
@@ -16,7 +17,7 @@ const TechClient = () => {
             animate= {{opacity: 1, x: '0%'}}
             transition = {{delay: 0.5, duration: 0.5}}
             className = 'mb-8 text-lg'>
-            Although my experience spans a broad range of technologies, I have honed my expertise predominantly in the following key areas:
+            Although my experience spans a broad range of technologies, I have honed my expertise predominantly in the following key areas through my <Link className = 'cursor-pointer font-semibold text-pastel-blue-light hover:underline' to = 'professionaljourney' smooth = {true} duration = {500}>Professional Journey</Link> and personal development.
         </motion.p>
         <article className = 'flex flex-wrap flex-row justify-between '>
             <List title = 'Typescript & Javascript' direction = 'up'>
