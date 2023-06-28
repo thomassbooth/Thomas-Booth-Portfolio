@@ -5,6 +5,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Roboto_Mono } from 'next/font/google'
 import WorkDescription from './WorkDescription'
 import Image from 'next/image'
+import Link from 'next/link'
+import { FaArrowRight } from 'react-icons/fa'
 
 const RobotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] })
 
@@ -83,6 +85,15 @@ const experience = [
     }
 ]
 
+const sentenceTransition = {
+    hidden: { opacity: 0},
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1,
+        }
+    }
+}
 
 const WorkClient = () => {
     const [current, setCurrent] = useState(0)
@@ -92,8 +103,16 @@ const WorkClient = () => {
     }, [])
 
   return (
-    <div className = 'mt-16 flex gap-4 md:h-[70vh]'>
-        <div>
+    <div className = 'mt-16 flex gap-4 h-[400px]'>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 1 }}
+            variants={{
+              visible: { opacity: 1, x: '0%'},
+              hidden: { opacity: 0, x: '-40%'}
+            }}>
             <ul className = 'flex flex-col ml-4 mt-16 border-l-2 border-pastel-brown-light/20'>
             {experience.map((job, index) => {
                 return (
@@ -110,7 +129,7 @@ const WorkClient = () => {
                     )
                 })}
             </ul>
-        </div>
+        </motion.div>
         <AnimatePresence mode = 'wait'>
             <motion.div
                 key={current}
