@@ -29,10 +29,10 @@ const HomeClient = () => {
           <Loading />
         
       ) : (
-        
       <motion.div
+        
         animate = {{opacity: 1}}>
-          <Image className = '-z-10 opacity-10 absolute md:top-0 2xl:top-auto' priority src = '/polygon-scatter-haikei.svg' alt = ''/>
+          <Image className = '-z-10 opacity-10 absolute' src = '/polygon-scatter-haikei.svg' width = {640} height = {500} alt = ''/>
           <Title line1 = {'Hi.'} line2 = 'I&#39;m Thomas Booth.' />
           <p className = 'text-left mt-5 text-lg'>
           Welcome to my digital hub! As an experienced software engineer, I passionately craft functional, intuitive, and visually appealing digital spaces that encapsulate each client&#39;s brand spirit.
