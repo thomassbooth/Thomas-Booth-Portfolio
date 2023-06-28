@@ -9,7 +9,7 @@ import List from './List'
 
 const TechClient = () => {
   return (
-    <div className = 'mt-8 mb-40'>
+    <div className = 'mt-8 mb-40 h-[75vh]'>
         <motion.p 
             initial = {{opacity: 0, x: '-20%'}}
             animate= {{opacity: 1, x: '0%'}}

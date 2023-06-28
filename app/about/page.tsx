@@ -20,8 +20,9 @@ const AboutPage = () => {
     <MeClient/>
     <Subtitle title = {'My Tech Stack'} visable = {{y: '0%'}} hidden = {{y: '30%'}}/>
     <TechClient/>
-    <Subtitle title = {'Where Ive Worked'} visable = {{x: '0%'}} hidden = {{x: '30%'}}/>
+    <Subtitle title = {'My Professional Journey'} visable = {{x: '0%'}} hidden = {{x: '30%'}}/>
     <WorkClient/>
+    <Subtitle title = {'Education'} visable = {{x: '0%'}} hidden = {{y: '40%'}}/>
   </PageTransition>
   )
 }

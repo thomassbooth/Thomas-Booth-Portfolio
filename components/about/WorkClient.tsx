@@ -92,7 +92,7 @@ const WorkClient = () => {
     }, [])
 
   return (
-    <div className = 'mt-16 flex gap-4'>
+    <div className = 'mt-16 flex gap-4 h-[75vh]'>
         <div>
             <ul className = 'flex flex-col ml-4 mt-16 border-l-2 border-pastel-brown-light/20'>
             {experience.map((job, index) => {
@@ -119,7 +119,6 @@ const WorkClient = () => {
                 initial="initial"
                 animate="in"
                 exit="out"
-                className = 'h-[75vh]'
                 variants={variants}>
                 <h2 className = 'text-2xl'><span className = 'font-semibold'>{experience[current].title}</span> <span className = 'font-medium hover:underline text-pastel-blue-dark cursor-pointer' 
                     onClick = {() => window.open(experience[current].link)}>
