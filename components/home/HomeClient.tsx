@@ -38,8 +38,8 @@ const HomeClient = () => {
           Welcome to my digital hub! As an experienced software engineer, I passionately craft functional, intuitive, and visually appealing digital spaces that encapsulate each client&#39;s brand spirit.
           </p>
           <motion.div
-          whileTap={{ scale: 0.95 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}>
           <Link href = '/about' className = 'text-pastel-blue-light flex items-center gap-2 mt-10 font-medium text-lg hover:underline'>
               Find out more
               <motion.span 
