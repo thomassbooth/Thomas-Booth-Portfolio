@@ -41,7 +41,7 @@ const TechClient = () => {
                 <ListItem tech = 'Kubernetes' icon = {SiKubernetes} />
             </List>
         </article>
-        <Image className = 'translate-y-20 opacity-20 -z-20' src = '/wave-haikei.svg' alt = 'wave' fill />
+        <Image className = 'hidden md:block translate-y-20 opacity-20 -z-20' src = '/wave-haikei.svg' alt = 'wave' fill />
     </div>
   )
 }
