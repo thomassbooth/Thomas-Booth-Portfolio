@@ -12,7 +12,7 @@ const MeClient = () => {
   const { scrollY, scrollYProgress } = useScroll()
   return (
     <section>
-      <div className = 'flex lg:flex-wrap text-lg items-center'>
+      <div className = 'flex lg:flex-nowrap flex-wrap text-lg items-center'>
         <div className = 'flex flex-col gap-4 leading-relaxed px-4'>
           <p>
               My name is Thomas Booth and I am a full stack Software Engineer from <span className = 'font-semibold line-through'>London</span> currently relocating to <span className = 'font-semibold'>Dubai.</span>
