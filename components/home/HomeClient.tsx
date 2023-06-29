@@ -38,7 +38,7 @@ const HomeClient = () => {
           Welcome to my digital hub! As an experienced software engineer, I passionately craft functional, intuitive, and visually appealing digital spaces that encapsulate each client&#39;s brand spirit.
           </p>
           <div className = 'flex gap-10'>
-            <Link href = '/contact' className = 'text-pastel-white flex px-4 py-2 bg-pastel-blue-light hover:bg-pastel-blue-dark/80 transition-all items-center gap-2 mt-8 font-medium text-lg '>
+            <Link href = '/contact' className = 'text-pastel-white flex px-4 py-2 bg-pastel-blue-light hover:bg-pastel-blue-dark/80 hover:scale-[1.02] transition-all items-center gap-2 mt-8 font-medium text-lg '>
               Contact Me
             </Link>
             <motion.div
