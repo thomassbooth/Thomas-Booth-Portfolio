@@ -37,7 +37,7 @@ const MeClient = () => {
               height={400}/>
         
       </div>
-      <div className = 'flex-col w-screen text-6xl opacity-20 hidden lg:flex'>
+      <div className = 'flex-col w-screen text-7xl text-white hidden lg:flex'>
         <Cities />
       </div>
     </section>
