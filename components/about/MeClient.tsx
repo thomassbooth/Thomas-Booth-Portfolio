@@ -28,7 +28,6 @@ const MeClient = () => {
           Interestingly, my <Link className = 'cursor-pointer font-semibold text-pastel-blue-light hover:underline' to = 'professionaljourney' smooth = {true} duration = {500}>Professional Journey</Link> commenced at an early stage. Since the age of 13, I had been pursuing a career freelance graphic designer and have accomplished numerous large-scale projects for various businesses and YouTube personalities.
           </p>
         </div>
-
           <Image src = '/images/thomasbooth01.jpeg' 
               className = 'translate-x-10 shadow-md m-5 border-2 rounded-sm grayscale hover:grayscale-0 hover:translate-y-2 transition-all duration-500'
               alt = 'Pick of me :D'
