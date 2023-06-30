@@ -10,6 +10,16 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const RobotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] })
 
+
+const bounceTransition = {
+    x: {
+        duration: 0.6,
+        repeat: Infinity,
+        repeatType: 'reverse',
+        ease: 'easeOut'
+    }
+}
+
 const variants = {
     initial: { x: -50, opacity: 0 },
     in: { x: 0, opacity: 1 },
@@ -129,6 +139,26 @@ const WorkClient = () => {
                     )
                 })}
             </ul>
+            <motion.div
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+            <Link href = '/projects' className = 'text-pastel-blue-light flex items-center gap-2 mt-10 font-medium text-lg hover:underline'>
+                My Projects
+                <motion.span 
+                    className = 'gap-2 cursor-pointer'
+                    transition = {bounceTransition}
+                    whileHover={{
+                        scale: 0.8,
+                        rotate: -360,
+                        borderRadius: "100%"
+                      }}
+                    animate = {{
+                        x: ['30%', '-10%']
+                    }}>
+                    <FaArrowRight/>
+                </motion.span>
+            </Link>
+            </motion.div>
         </motion.div>
         <AnimatePresence mode = 'wait'>
             <motion.div
