@@ -33,7 +33,7 @@ const CircleCursor = () => {
           x: mousePosition.x - 75,
           y: mousePosition.y - 75,
           backgroundColor: '#F9F3EE',
-          
+          mixBlendMode: 'difference'
         }
       }
   
