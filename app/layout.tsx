@@ -3,11 +3,11 @@ import Container from '../components/Container'
 import Navbar from '../components/navbar/Navbar'
 import './globals.css'
 import { Inter, Quicksand } from 'next/font/google'
-import ThemeProviderO from './Providers/ThemeProviderO'
 import Personals from '../components/Personals'
 import { GlobalContextProvider } from './Providers/GlobalProvider'
 import OuterContainer from '../components/OuterContainer'
 import Grain from '@/components/Grain'
+import CircleCursor from '@/components/CircleCursor'
 
 const roboto = Quicksand({subsets: ['latin'] })
 const inter = Inter({subsets: ['latin'] })
@@ -27,6 +27,7 @@ export default function RootLayout({
       <body className={`${inter.className} tracking-wide w-screen overflow-x-hidden`}>
         <GlobalContextProvider>
           <Grain/>
+          <CircleCursor/>
           <OuterContainer>
             <Navbar />
             <Personals />

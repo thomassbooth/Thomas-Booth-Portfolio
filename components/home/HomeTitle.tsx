@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Inter } from 'next/font/google'
+import { useGlobalContext } from '@/app/Providers/GlobalProvider'
 
 interface TitleProps {
     line1: string
@@ -29,7 +30,10 @@ const letterTransition = {
 
 const inter = Inter({weight: ['700'], subsets: ['latin'] })
 
-const Title: React.FC<TitleProps>  = ({ line1, line2 }) => {
+const Title: React.FC<TitleProps>  = ({ line1, line2}) => {
+
+    const { textEnter, textLeave } = useGlobalContext()
+
   return (
     <>
         <motion.article
@@ -48,6 +52,8 @@ const Title: React.FC<TitleProps>  = ({ line1, line2 }) => {
                             className = 'text-6xl'
                             key = {char + i}
                             variants = {letterTransition}
+                            onMouseEnter = {() => textEnter}
+                            onMouseLeave = {() => textLeave}
                         >
                             {char}
                         </motion.span>
@@ -60,6 +66,8 @@ const Title: React.FC<TitleProps>  = ({ line1, line2 }) => {
                             className = 'text-6xl'
                             key = {char + i}
                             variants = {letterTransition}
+                            onMouseEnter = {() => textEnter}
+                            onMouseLeave = {() => textLeave}
                         >
                             {char}
                         </motion.span>
