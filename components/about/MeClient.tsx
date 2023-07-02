@@ -11,8 +11,6 @@ import { useGlobalContext } from '@/app/Providers/GlobalProvider';
 
 const MeClient = () => {
 
-  const { textEnter, textLeave } = useGlobalContext()
-
   return (
     <section>
       <div className = 'flex lg:flex-nowrap flex-wrap text-lg items-center'>
@@ -33,8 +31,6 @@ const MeClient = () => {
           <Image src = '/images/thomasbooth01.jpeg' 
               className = 'translate-x-10 shadow-lg m-5 border-8 border-black/10 rounded-xl grayscale hover:grayscale-0 hover:translate-y-2 transition-all duration-500'
               alt = 'Pick of me :D'
-              onMouseEnter = {textEnter} 
-              onMouseLeave = {textLeave} 
               priority
               width={400}
               height={400}/>
