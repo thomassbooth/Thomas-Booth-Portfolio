@@ -52,8 +52,8 @@ const Title: React.FC<TitleProps>  = ({ line1, line2}) => {
                             className = 'text-6xl'
                             key = {char + i}
                             variants = {letterTransition}
-                            onMouseEnter = {() => textEnter}
-                            onMouseLeave = {() => textLeave}
+                            onMouseEnter = {textEnter}
+                            onMouseLeave = {textLeave}
                         >
                             {char}
                         </motion.span>
@@ -66,8 +66,8 @@ const Title: React.FC<TitleProps>  = ({ line1, line2}) => {
                             className = 'text-6xl'
                             key = {char + i}
                             variants = {letterTransition}
-                            onMouseEnter = {() => textEnter}
-                            onMouseLeave = {() => textLeave}
+                            onMouseEnter = {textEnter}
+                            onMouseLeave = {textLeave}
                         >
                             {char}
                         </motion.span>

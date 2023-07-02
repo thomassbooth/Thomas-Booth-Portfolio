@@ -15,8 +15,8 @@ interface contextProps {
     setMousePosition: Dispatch<SetStateAction<mousePosition>> 
     cursorVariant: string
     setCursorVariant: Dispatch<SetStateAction<string>>
-    textEnter: Dispatch<SetStateAction<string>>
-    textLeave: Dispatch<SetStateAction<string>>
+    textEnter: () => void
+    textLeave: () => void
 }
 
 const GlobalContext = createContext<contextProps>({
