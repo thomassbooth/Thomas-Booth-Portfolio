@@ -22,7 +22,7 @@ const links = [
 
 const Navbar = () => {
   const path = usePathname();
-  const { loading } = useGlobalContext()
+  const { loading, textEnter, textLeave } = useGlobalContext()
 
   return (
     <div>
@@ -43,6 +43,7 @@ const Navbar = () => {
                       whileTap={{ scale: 0.95 }}
                       transition={{ type: "spring", stiffness: 400, damping: 17 }}
                       className = 'group hover:text-pastel-blue-dark-100 transition-colors duration-500'
+                      onMouseEnter = {textEnter} onMouseLeave = {textLeave} 
                     >
                       {
                       ((link.href === path) || (path.includes('/projects') && link.href === '/projects')) && (
