@@ -8,8 +8,7 @@ import { MdOutlineKeyboardArrowUp } from 'react-icons/md'
 import { useGlobalContext } from '../app/Providers/GlobalProvider'
 
 const Personals = () => {
-  const { loading, textEnter, textLeave } = useGlobalContext()
-
+  const { loading } = useGlobalContext()
   return (
     <div>
     { !loading && (
@@ -20,10 +19,10 @@ const Personals = () => {
             transition={{duration: 1}}
             exit={{ opacity: 0 }}>
             <MdOutlineKeyboardArrowUp size = {20}/>
-            <FaTwitter onMouseEnter = {textEnter} onMouseLeave = {textLeave} onClick = {() => {window.open('https://twitter.com/thomassbooth')}} size = {20} className = 'hover:text-pastel-blue-dark-100 duration-500 hover:-translate-y-0.5 transition-all cursor-pointer'/>
-            <FaLinkedin onMouseEnter = {textEnter} onMouseLeave = {textLeave} onClick = {() => {window.open('https://www.linkedin.com/in/thomas-booth-08baa6151/')}} size = {20} className = 'hover:text-pastel-blue-dark-100 duration-500 hover:-translate-y-0.5 transition-all cursor-pointer'/>
-            <FaGithub onMouseEnter = {textEnter} onMouseLeave = {textLeave} onClick = {() => {window.open('https://github.com/thomassbooth')}} size = {20} className = 'hover:text-pastel-blue-dark-100 duration-500 hover:-translate-y-0.5 transition-all cursor-pointer'/>
-            <FiInstagram onMouseEnter = {textEnter} onMouseLeave = {textLeave} onClick = {() => {window.open('https://www.instagram.com/thomassboothh/')}} size = {20} className = 'hover:text-pastel-blue-dark-100 duration-500 hover:-translate-y-0.5 transition-all cursor-pointer'/>
+            <FaTwitter onClick = {() => {window.open('https://twitter.com/thomassbooth')}} size = {20} className = 'hover:text-pastel-blue-dark-100 duration-500 hover:-translate-y-0.5 transition-all cursor-pointer'/>
+            <FaLinkedin onClick = {() => {window.open('https://www.linkedin.com/in/thomas-booth-08baa6151/')}} size = {20} className = 'hover:text-pastel-blue-dark-100 duration-500 hover:-translate-y-0.5 transition-all cursor-pointer'/>
+            <FaGithub onClick = {() => {window.open('https://github.com/thomassbooth')}} size = {20} className = 'hover:text-pastel-blue-dark-100 duration-500 hover:-translate-y-0.5 transition-all cursor-pointer'/>
+            <FiInstagram onClick = {() => {window.open('https://www.instagram.com/thomassboothh/')}} size = {20} className = 'hover:text-pastel-blue-dark-100 duration-500 hover:-translate-y-0.5 transition-all cursor-pointer'/>
             <div className = 'h-12 w-0.5 rounded-full bg-pastel-brown-dark'/>
         </motion.div>
     </aside>
