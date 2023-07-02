@@ -39,7 +39,7 @@ const CircleCursor = () => {
   return !loading && (
     <>
         <motion.div 
-        className = 'bg-pastel-brown-dark mix-blend-difference pointer-events-none h-12 w-12 rounded-full z-20 fixed top-0 left-0'
+        className = 'hidden md:visible bg-pastel-brown-dark mix-blend-difference pointer-events-none h-12 w-12 rounded-full z-20 fixed top-0 left-0'
         // @ts-ignore
         variants = {mouseVariants} 
         animate = {cursorVariant}/>
