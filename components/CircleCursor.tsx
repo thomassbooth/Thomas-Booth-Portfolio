@@ -6,7 +6,7 @@ import { useGlobalContext } from "@/app/Providers/GlobalProvider"
 
 const CircleCursor = () => {
       
-      const { mousePosition, setMousePosition, cursorVariant } = useGlobalContext()
+      const { loading, mousePosition, setMousePosition, cursorVariant } = useGlobalContext()
       
       useEffect(() => {
         const mouseMove = (e: MouseEvent) => {
@@ -33,14 +33,13 @@ const CircleCursor = () => {
           x: mousePosition.x - 50,
           y: mousePosition.y - 50,
           backgroundColor: '#F9F3EE',
-          mixBlendMode: 'difference'
         }
       }
   
-  return (
+  return !loading && (
     <>
         <motion.div 
-        className = 'bg-pastel-brown-dark pointer-events-none h-8 w-8 rounded-full z-20 fixed top-0 left-0'
+        className = 'bg-pastel-brown-dark mix-blend-difference pointer-events-none h-12 w-12 rounded-full z-20 fixed top-0 left-0'
         // @ts-ignore
         variants = {mouseVariants} 
         animate = {cursorVariant}/>

@@ -2,6 +2,7 @@
 
 import { Inter, Roboto, Roboto_Mono } from 'next/font/google'
 import { motion } from 'framer-motion'
+import { useGlobalContext } from '@/app/Providers/GlobalProvider'
 const RobotoMono = Roboto_Mono({ weight: '400', subsets: ['latin'] })
 
 
@@ -13,6 +14,8 @@ interface titleProps {
 
 
 const Title: React.FC<titleProps> = ({title, pageNo, slideDirection}) => {
+
+  const { textEnter, textLeave } = useGlobalContext()
 
   let initialAnimation = {}
 
@@ -36,11 +39,14 @@ const Title: React.FC<titleProps> = ({title, pageNo, slideDirection}) => {
   return (
     <>
         <motion.h1 
-          className = {`font-bold text-5xl mb-10 flex items-center tracking-wider gap-4`}
+            className = {`font-bold text-5xl mb-10 flex items-center tracking-wider gap-4`}
+            onMouseEnter = {textEnter}
+            onMouseLeave = {textLeave}
             initial = {initialAnimation}
             animate = {{opacity: 1, x: '0%', y: '0%'}}
             transition = {{ delay: 1}}>
-            <span className = {`${RobotoMono.className} opacity-40 font-bold text-4xl`}>
+            <span 
+              className = {`${RobotoMono.className} opacity-40 font-bold text-4xl`}>
                 {pageNo}.
             </span>
             {title}
