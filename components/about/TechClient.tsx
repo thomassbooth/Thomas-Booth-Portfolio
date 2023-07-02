@@ -3,6 +3,7 @@
 import { TbBrandNextjs } from 'react-icons/tb'
 import { SiDjango, SiExpress, SiFastapi, SiKubernetes, SiMongodb, SiPostgresql, SiRedis } from 'react-icons/si'
 import { FaNodeJs, FaReact, FaLaravel, FaDocker, FaAws } from 'react-icons/fa'
+import { GiBearFace } from 'react-icons/gi'
 import { motion } from 'framer-motion'
 import ListItem from './ListItem'
 import List from './List'
@@ -22,8 +23,9 @@ const TechClient = () => {
         <article className = 'flex flex-wrap flex-row justify-between '>
             <List title = 'Typescript & Javascript' direction = 'up'>
                 <ListItem tech = 'NextJS' icon = {TbBrandNextjs}/>
-                <ListItem tech = 'NodeJS' icon = {FaNodeJs}/>
                 <ListItem tech = 'ReactJS' icon = {FaReact}/>
+                <ListItem tech = 'Zustand/Redux' icon = {GiBearFace}/>
+                <ListItem tech = 'NodeJS' icon = {FaNodeJs}/>
                 <ListItem tech = 'ExpressJS' icon = {SiExpress}/>
             </List>
             <List title = 'Python' direction = 'down'>
