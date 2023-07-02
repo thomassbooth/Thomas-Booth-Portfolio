@@ -44,7 +44,7 @@ const Title: React.FC<titleProps> = ({title, pageNo, slideDirection}) => {
             onMouseLeave = {textLeave}
             initial = {initialAnimation}
             animate = {{opacity: 1, x: '0%', y: '0%'}}
-            transition = {{ delay: 1}}>
+            transition = {{ delay: 0.7}}>
             <span 
               className = {`${RobotoMono.className} opacity-40 font-bold text-4xl`}>
                 {pageNo}.

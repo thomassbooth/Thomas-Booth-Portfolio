@@ -19,6 +19,7 @@ const sentenceTransition = {
         }
     }
 }
+
 const letterTransition = {
     hidden: { opacity: 0, y: 50},
     visible: {

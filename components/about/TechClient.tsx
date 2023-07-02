@@ -14,11 +14,16 @@ const TechClient = () => {
   return (
     <div  className = 'mt-8 mb-40 md:h-[70vh]'>
         <motion.p 
-            initial = {{opacity: 0, x: '-20%'}}
-            animate= {{opacity: 1, x: '0%'}}
+            initial = 'hidden'
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+                hidden: {opacity: 0, x: '-40%'},
+                visible: {opacity: 1, x: '0%'}
+            }}
             transition = {{delay: 0.5, duration: 0.5}}
             className = 'mb-8 text-lg'>
-            Although my experience spans a broad range of technologies, I have honed my expertise predominantly in the following key areas through my <Link className = 'cursor-pointer font-semibold text-pastel-blue-light hover:underline' to = 'professionaljourney' smooth = {true} duration = {500}>Professional Journey</Link> and personal development.
+            Although my experience spans a broad range of technologies, I have honed my expertise predominantly in the following key areas through my <Link className = 'cursor-pointer font-semibold text-pastel-blue-light hover:underline' to = 'professionaljourney' smooth = {true} duration = {1000}>Professional Journey</Link> and personal development.
         </motion.p>
         <article className = 'flex flex-wrap flex-row justify-between '>
             <List title = 'Typescript & Javascript' direction = 'up'>
