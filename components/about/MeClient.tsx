@@ -11,6 +11,8 @@ import { useGlobalContext } from '@/app/Providers/GlobalProvider';
 
 const MeClient = () => {
 
+  const { textEnter, textLeave } = useGlobalContext()
+
   return (
     <section>
       <div className = 'flex lg:flex-nowrap flex-wrap text-lg items-center'>
