@@ -15,6 +15,8 @@ interface contextProps {
     setMousePosition: Dispatch<SetStateAction<mousePosition>> 
     cursorVariant: string
     setCursorVariant: Dispatch<SetStateAction<string>>
+    mouseCircleEnabled: boolean
+    setMouseCircleEnabled: Dispatch<SetStateAction<boolean>>
     textEnter: () => void
     textLeave: () => void
 }
@@ -26,6 +28,8 @@ const GlobalContext = createContext<contextProps>({
     setMousePosition: () => {},
     cursorVariant: '',
     setCursorVariant: () => '',
+    mouseCircleEnabled: false,
+    setMouseCircleEnabled: () => true,
     textEnter: () => '',
     textLeave: () => ''
 })
@@ -38,13 +42,14 @@ export const GlobalContextProvider = ({ children } : { children: React.ReactNode
         y: 0,
       })
     const [cursorVariant, setCursorVariant] = useState('default')
+    const [mouseCircleEnabled, setMouseCircleEnabled] = useState(false)
     const textEnter = () => {
         console.log('hi there')
         setCursorVariant('text')}
     const textLeave = () => setCursorVariant('default')
 
     return (
-        <GlobalContext.Provider value = {{ textEnter, textLeave, loading, setLoading, mousePosition, setMousePosition, cursorVariant, setCursorVariant }}>
+        <GlobalContext.Provider value = {{ mouseCircleEnabled, setMouseCircleEnabled, textEnter, textLeave, loading, setLoading, mousePosition, setMousePosition, cursorVariant, setCursorVariant }}>
             {children}
         </GlobalContext.Provider>
     )

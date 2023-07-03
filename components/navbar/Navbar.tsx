@@ -8,6 +8,7 @@ import DarkmodeIcon from "./DarkmodeIcon";
 import Logo from "./Logo";
 import { Inter } from "next/font/google";
 import { useGlobalContext } from "@/app/Providers/GlobalProvider";
+import CircleToggle from "./CircleToggle";
 
 
 
@@ -61,7 +62,9 @@ const Navbar = () => {
               <div className = 'px-5'>
                 <DarkmodeIcon/>
               </div>
-              
+              <div className = 'pr-5'>
+                <CircleToggle/>
+              </div>
             </nav>
           </div>
         </motion.header>
