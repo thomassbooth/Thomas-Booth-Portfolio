@@ -24,8 +24,8 @@ const CircleCursor = () => {
       
       const mouseVariants = {
         default: {
-          x: mousePosition.x - 16,
-          y: mousePosition.y - 16
+          x: mousePosition.x - 24,
+          y: mousePosition.y - 24
         },
         text: {
           height: 100,
@@ -39,7 +39,7 @@ const CircleCursor = () => {
   return !loading && mouseCircleEnabled &&(
     <>
         <motion.div 
-        className = 'hidden md:block bg-pastel-brown-dark mix-blend-difference pointer-events-none h-12 w-12 rounded-full z-20 fixed top-0 left-0'
+        className = 'hidden md:block bg-[#F9F3EE] mix-blend-difference pointer-events-none h-12 w-12 rounded-full z-20 fixed top-0 left-0'
         // @ts-ignore
         variants = {mouseVariants} 
         animate = {cursorVariant}/>
