@@ -9,7 +9,7 @@ const CircleToggle = () => {
     const { setMouseCircleEnabled, mouseCircleEnabled } = useGlobalContext()
   return (
     <div>
-      <label className = 'absolute text-xs  w-20 -translate-y-5 -translate-x-2 rotate-12'>click me</label>
+      <label className = 'absolute text-xs  w-10 -translate-y-5 -translate-x-2 rotate-12'>click me</label>
     {
         mouseCircleEnabled 
         ? <BsCircleFill className = 'transition-all hover:text-pastel-blue-dark-100 duration-500' onClick = {() => setMouseCircleEnabled(!mouseCircleEnabled)}/>
