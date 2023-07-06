@@ -7,6 +7,10 @@ body {
     position: relative;
 }
 
+.text-shadow {
+    text-shadow: 1px 1px 3px rgba(0,0,0,.5)
+}
+
 .noiseOverlay {
     background-image: url('/images/noise.png');
     background-repeat: repeat-x repeat-y;
