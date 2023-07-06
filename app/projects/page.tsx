@@ -17,8 +17,8 @@ const ProjectsPage = () => {
         className = 'border-2 rounded-lg'
         src = '/images/airbnb.jpeg' 
         alt = 'airbnb' 
-        width = {500} 
-        height = {500}/>
+        width = {2000}
+        height = {2000}/>
     </PageTransition>
   )
 } 
