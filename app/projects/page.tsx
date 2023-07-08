@@ -13,9 +13,14 @@ const ProjectsPage = () => {
   return (
     <PageTransition width = 'w-4/5'>
       <Title title = 'Projects' pageNo = {'03'} slideDirection = {'down'}/>
-      <Project imgSrc='/images/airbnbscreenshot.png' alt = 'airbnb' projectName = 'Airbnb Clone - A functional property rental clone'
-        techUsed = {['NextJS', 'Vercel', 'MongoDB', 'Prisma', 'NextAuth', 'Zustand']}/>
-      
+      <Project imgSrc='/images/airbnbscreenshot.png' alt = 'airbnb' projectName = 'Airbnb Rental Clone'
+        techUsed = {['NextJS', 'MongoDB', 'Prisma', 'NextAuth', 'Zustand', 'TailwindCSS']}
+        githubRepo = 'https://github.com/thomassbooth/airbnb-clone'/>
+      <div className = 'w-full flex justify-end'>
+      <Project className = 'mt-10' imgSrc='/images/airbnbscreenshot.png' alt = 'airbnb' projectName = 'Airbnb Clone - A functional property rental clone'
+        techUsed = {['NextJS', 'MongoDB', 'Prisma', 'NextAuth', 'Zustand', 'TailwindCSS']}
+        githubRepo = ''/>
+      </div>
     </PageTransition>
   )
 } 
