@@ -39,7 +39,9 @@ const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectNa
                     }
                     </div>
                 </div>
-                <FaGithub className = 'hover:text-white text-gray-300 text-shadow' onClick = {() => window.open(githubRepo)} size = {30}/>
+                <div>
+                    <FaGithub className = 'hover:text-white text-gray-300 text-shadow' onClick = {() => window.open(githubRepo)} size = {30}/>
+                </div>
             </div>
             <Image 
                 className = 'rounded-lg'
