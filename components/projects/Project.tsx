@@ -58,7 +58,15 @@ const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, pro
                     <FaGithub className = 'hover:text-white transition-all text-gray-300 text-shadow hover:scale-105' onClick = {() => window.open(githubRepo)} size = {30}/>
                 </div>
             </div>
-            <motion.div>
+            <motion.div
+            initial = 'hidden'
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+                hidden: hiddenVariant,
+                visible: {opacity: 1, x: '0%', y: '0%'}
+            }}
+            transition={{delay: 1}}>
                 <Image 
                     className = 'rounded-xl'
                     src = {imgSrc}
