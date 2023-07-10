@@ -25,14 +25,14 @@ const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, pro
     return (
     <div className = {`w-5/6 ${className}`}>
         <motion.div 
-            // initial = 'hidden'
-            // whileInView="visible"
-            // viewport={{ once: true }}
-            // variants={{
-            //     hidden: hiddenVariant,
-            //     visible: {opacity: 1, x: '0%', y: '0%'}
-            // }}
-            // transition={{delay: 1}}
+            initial = 'hidden'
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+                hidden: {opacity: 0},
+                visible: {opacity: 1}
+            }}
+            transition={{delay: 1}}
             className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
             onClick = {() => {window.open(hosted)}}
             onMouseEnter = {textEnter} onMouseLeave = {textLeave}>
