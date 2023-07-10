@@ -58,13 +58,15 @@ const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, pro
                     <FaGithub className = 'hover:text-white transition-all text-gray-300 text-shadow hover:scale-105' onClick = {() => window.open(githubRepo)} size = {30}/>
                 </div>
             </div>
-            <Image 
-                className = 'rounded-xl'
-                src = {imgSrc}
-                alt = {alt} 
-                priority
-                width = {2000}
-                height = {2000}/>
+            <motion.div>
+                <Image 
+                    className = 'rounded-xl'
+                    src = {imgSrc}
+                    alt = {alt} 
+                    priority
+                    width = {2000}
+                    height = {2000}/>
+            </motion.div>
         </motion.div>
     </div>
   )
