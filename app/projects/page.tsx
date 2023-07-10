@@ -28,12 +28,12 @@ const ProjectsPage = () => {
           hosted = 'https://thomasbooth-properties-rental.vercel.app/'
           left = {false}/>
       </div>
+      <Outro/>
       <Project className = 'mt-60' imgSrc='/images/nunigramscreenshot.jpeg' alt = 'Nunigram' projectName = 'Instagram Frontend Clone'
         techUsed = {['ReactJS', 'Redux', 'Framer Motion', 'Auth0', 'TailwindCSS']}
         githubRepo = 'https://github.com/thomassbooth/nunigram-frontend'
         hosted = 'https://nunigram.netlify.app/'
         left = {true}/>
-      <Outro/>
     </PageTransition>
   )
 } 
