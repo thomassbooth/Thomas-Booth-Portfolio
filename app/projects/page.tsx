@@ -14,7 +14,7 @@ const ProjectsPage = () => {
   return (
     <PageTransition width = 'w-4/5'>
       <Title title = 'Projects' pageNo = {'03'} slideDirection = {'down'}/>
-      <Intro/>
+      {/* <Intro/> */}
       <Project className = 'mt-20' imgSrc='/images/portfolioscreenshot.png' alt = 'ThomasBooth' projectName = 'Personal Portfolio'
         techUsed = {['NextJS', 'Zustand', 'Framer Motion', 'TailwindCSS']}
         githubRepo = 'https://github.com/thomassbooth/thomas-booth-portfolio'

@@ -7,10 +7,10 @@ const Intro = () => {
     <motion.div 
         initial={{ x: '50%', opacity: 0 }}
         animate={{ x: '0%', opacity: 1 }}
-        transition={{delay: 1, type: 'spring', when: 'beforeChildren', duration: 1, staggerChildren: 0.2}}
+        transition={{delay: 1 , type: 'spring', when: 'beforeChildren', duration: 1, staggerChildren: 0.2}}
         className = 'flex flex-col gap-4 text-lg leading-relaxed px-4'>
         <p>
-        Uncover my coding prowess through these key projects: my own portfolio, a recreation of Instagram, and a replicated Airbnb platform, each exhibiting unique facets of my technical capabilities.
+            Dive into my technical journey showcased through these projects: a self-developed portfolio, a doppelgänger of Instagram, and an Airbnb mirror, each demonstrating my varied software engineering skills.
         </p>
         
     </motion.div>

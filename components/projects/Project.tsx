@@ -32,7 +32,7 @@ const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, pro
                 hidden: hiddenVariant,
                 visible: {opacity: 1, x: '0%', y: '0%'}
             }}
-            className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
+            className = 'group hover:-translate-y-2 shadow-lg rounded-xl cursor-pointer transition-all duration-500 overflow-hidden relative'
             onClick = {() => {window.open(hosted)}}
             onMouseEnter = {textEnter} onMouseLeave = {textLeave}>
             <div className = 'w-full h-1/4 rounded-xl text-white flex p-5 justify-between items-end opacity-0 group-hover:opacity-100 bg-gradient-to-t from-black/50 to-white/0 transition-all duration-300 bottom-0 absolute'>

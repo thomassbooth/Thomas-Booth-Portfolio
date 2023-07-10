@@ -49,7 +49,7 @@ const MeClient = () => {
           My skillset transcends the boundaries of the technology industry. During my tenure at Cardiff University, I successfully obtained a First-class degree in <span onMouseEnter = {textEnter} onMouseLeave = {textLeave} className = 'font-semibold'>Physics</span> and <span onMouseEnter = {textEnter} onMouseLeave = {textLeave} className = 'font-semibold'>Mathematics.</span>
           </p>
           <p>
-          Interestingly, my <Link className = 'cursor-pointer font-semibold text-pastel-blue-light hover:underline' to = 'professionaljourney' smooth = {true} duration = {1500}>Professional Journey</Link> commenced at an early stage. Since the age of 13, I had been pursuing a career freelance graphic designer and have accomplished numerous large-scale projects for various businesses and YouTube personalities.
+          Interestingly, my <Link className = 'cursor-pointer font-semibold text-pastel-blue-light hover:underline' to = 'professionaljourney' smooth = {true} duration = {1500}>Professional Journey</Link> commenced at an early stage. Since the age of 13, I had been pursuing a career <span className = 'font-semibold'>freelance graphic designer</span> and have accomplished numerous large-scale projects for various businesses and YouTube personalities.
           </p>
         </motion.div>
           <Image src = '/images/thomasbooth01.jpeg' 
