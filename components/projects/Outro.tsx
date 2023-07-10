@@ -20,11 +20,11 @@ const Outro = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={{
-            hidden: {opacity: 0, x: '60%'},
+            hidden: {opacity: 0, x: '40%'},
             visible: {opacity: 1, x: '0%', y: '0%'}
         }}
-        transition = {{delay: 2, duration: 0.5}}
-        className = 'mt-10'>
+        transition = {{delay: 1, duration: 0.5}}
+        className = 'my-20 text-lg'>
         <span>Like what you see?</span>
         <Link href = '/contact' className = 'text-pastel-blue-light flex items-center gap-2 font-medium text-lg hover:underline'>
             Contact me!
