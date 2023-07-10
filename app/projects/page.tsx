@@ -17,18 +17,19 @@ const ProjectsPage = () => {
         techUsed = {['NextJS', 'Zustand', 'Framer Motion', 'TailwindCSS']}
         githubRepo = 'https://github.com/thomassbooth/thomas-booth-portfolio'
         hosted = 'https://thomas-booth-portfolio.vercel.app/'
-        />
+        left = {true}/>
       <div className = 'w-full flex justify-end'>
         <Project className = 'mt-60' imgSrc='/images/airbnbscreenshot.png' alt = 'airbnb' projectName = 'Airbnb Rental Clone'
           techUsed = {['NextJS', 'MongoDB', 'Prisma', 'OAuth', 'NextAuth', 'Zustand', 'TailwindCSS']}
           githubRepo = 'https://github.com/thomassbooth/airbnb-clone'
-          hosted = 'https://thomasbooth-properties-rental.vercel.app/'/>
+          hosted = 'https://thomasbooth-properties-rental.vercel.app/'
+          left = {false}/>
       </div>
       <Project className = 'mt-60' imgSrc='/images/nunigramscreenshot.jpeg' alt = 'Nunigram' projectName = 'Instagram Frontend Clone'
         techUsed = {['ReactJS', 'Redux', 'Framer Motion', 'Auth0', 'TailwindCSS']}
         githubRepo = 'https://github.com/thomassbooth/nunigram-frontend'
         hosted = 'https://nunigram.netlify.app/'
-        />
+        left = {true}/>
     </PageTransition>
   )
 } 

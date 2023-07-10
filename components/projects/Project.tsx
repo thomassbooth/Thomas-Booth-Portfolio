@@ -11,16 +11,17 @@ interface projectProps {
     className?: string
     githubRepo: string
     hosted: string
+    left: boolean
 }
 
 import Image from 'next/image'
 import React from 'react'
 import { useGlobalContext } from '@/app/Providers/GlobalProvider'
 
-const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectName, githubRepo, hosted, techUsed = []}) => {
+const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, projectName, githubRepo, hosted, techUsed = []}) => {
   
     const { textEnter, textLeave } = useGlobalContext()
-
+    let hiddenVariant = left ? {opacity: 0, x: '-60%'} : {opacity: 0, x: '+60%'}
     return (
     <div className = {`w-5/6 ${className}`}>
         <motion.div 
@@ -28,10 +29,10 @@ const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectNa
             whileInView="visible"
             viewport={{ once: true }}
             variants={{
-                hidden: {opacity: 0, x: '-40%'},
-                visible: {opacity: 1, x: '0%'}
+                hidden: hiddenVariant,
+                visible: {opacity: 1, x: '0%', y: '0%'}
             }}
-            transition={{type: 'spring', duration: 1}}
+            transition={{}}
             className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
             onClick = {() => {window.open(hosted)}}
             onMouseEnter = {textEnter} onMouseLeave = {textLeave}>
