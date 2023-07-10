@@ -21,7 +21,7 @@ import { useGlobalContext } from '@/app/Providers/GlobalProvider'
 const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, projectName, githubRepo, hosted, techUsed = []}) => {
   
     const { textEnter, textLeave } = useGlobalContext()
-    let hiddenVariant = left ? {opacity: 0, x: '-60%'} : {opacity: 0, x: '+60%'}
+    let hiddenVariant = left ? {x: '-60%'} : {x: '+60%'}
     return (
     <div className = {`w-5/6 ${className}`}>
         <motion.div 
@@ -32,7 +32,6 @@ const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, pro
                 hidden: hiddenVariant,
                 visible: {opacity: 1, x: '0%', y: '0%'}
             }}
-            transition={{delay: 1}}
             className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
             onClick = {() => {window.open(hosted)}}
             onMouseEnter = {textEnter} onMouseLeave = {textLeave}>
