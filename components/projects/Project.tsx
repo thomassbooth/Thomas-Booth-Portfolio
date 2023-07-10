@@ -1,6 +1,7 @@
 'use client'
 
 import { FaGithub } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 interface projectProps {
     imgSrc: string
@@ -22,7 +23,16 @@ const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectNa
 
     return (
     <div className = {`w-5/6 ${className}`}>
-        <div className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
+        <motion.div 
+            initial = 'hidden'
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+                hidden: {opacity: 0, x: '-40%'},
+                visible: {opacity: 1, x: '0%'}
+            }}
+            transition={{delay: 1, type: 'spring', when: 'beforeChildren', duration: 1}}
+            className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
             onClick = {() => {window.open(hosted)}}
             onMouseEnter = {textEnter} onMouseLeave = {textLeave}>
             <div className = 'w-full h-1/4 rounded-xl text-white flex p-5 justify-between items-end opacity-0 group-hover:opacity-100 bg-gradient-to-t from-black/50 to-white/0 transition-all duration-300 bottom-0 absolute'>
@@ -54,7 +64,7 @@ const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectNa
                 priority
                 width = {2000}
                 height = {2000}/>
-        </div>
+        </motion.div>
     </div>
   )
 }
