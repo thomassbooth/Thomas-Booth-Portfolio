@@ -13,14 +13,22 @@ const ProjectsPage = () => {
   return (
     <PageTransition width = 'w-4/5'>
       <Title title = 'Projects' pageNo = {'03'} slideDirection = {'down'}/>
-      <Project imgSrc='/images/airbnbscreenshot.png' alt = 'airbnb' projectName = 'Airbnb Rental Clone'
-        techUsed = {['NextJS', 'MongoDB', 'Prisma', 'NextAuth', 'Zustand', 'TailwindCSS']}
-        githubRepo = 'https://github.com/thomassbooth/airbnb-clone'/>
+      <Project className = 'mt-20' imgSrc='/images/nunigramscreenshot.jpeg' alt = 'Nunigram' projectName = 'Instagram Frontend Clone'
+        techUsed = {['ReactJS', 'Redux', 'Framer Motion', 'Auth0', 'TailwindCSS']}
+        githubRepo = 'https://github.com/thomassbooth/nunigram-frontend'
+        hosted = 'https://nunigram.netlify.app/'
+        />
       <div className = 'w-full flex justify-end'>
-      <Project className = 'mt-10' imgSrc='/images/airbnbscreenshot.png' alt = 'airbnb' projectName = 'Airbnb Clone - A functional property rental clone'
-        techUsed = {['NextJS', 'MongoDB', 'Prisma', 'NextAuth', 'Zustand', 'TailwindCSS']}
-        githubRepo = ''/>
+        <Project className = 'mt-40' imgSrc='/images/airbnbscreenshot.png' alt = 'airbnb' projectName = 'Airbnb Rental Clone'
+          techUsed = {['NextJS', 'MongoDB', 'Prisma', 'OAuth', 'NextAuth', 'Zustand', 'TailwindCSS']}
+          githubRepo = 'https://github.com/thomassbooth/airbnb-clone'
+          hosted = 'https://thomasbooth-properties-rental.vercel.app/'/>
       </div>
+      <Project className = 'mt-40' imgSrc='/images/nunigramscreenshot.jpeg' alt = 'Nunigram' projectName = 'Instagram Frontend Clone'
+        techUsed = {['ReactJS', 'Redux', 'Framer Motion', 'Auth0', 'TailwindCSS']}
+        githubRepo = 'https://github.com/thomassbooth/nunigram-frontend'
+        hosted = 'https://nunigram.netlify.app/'
+        />
     </PageTransition>
   )
 } 

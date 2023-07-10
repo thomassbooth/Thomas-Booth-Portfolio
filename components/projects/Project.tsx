@@ -9,23 +9,27 @@ interface projectProps {
     techUsed: Array<string>
     className?: string
     githubRepo: string
+    hosted: string
 }
 
 import Image from 'next/image'
 import React from 'react'
+import { useGlobalContext } from '@/app/Providers/GlobalProvider'
 
-const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectName, githubRepo, techUsed = []}) => {
-  return (
+const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectName, githubRepo, hosted, techUsed = []}) => {
+  
+    const { textEnter, textLeave } = useGlobalContext()
+
+    return (
     <div className = {`w-5/6 ${className}`}>
-        <div className = 'group hover:-translate-y-2 shadow-lg border-8 rounded-xl border-black/10 cursor-pointer transition-all duration-500 overflow-hidden relative'>
+        <div className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
+            onClick = {() => {window.open(hosted)}}
+            onMouseEnter = {textEnter} onMouseLeave = {textLeave}>
             <div className = 'w-full h-1/4 rounded-lg text-white flex p-5 justify-between items-end opacity-0 group-hover:opacity-100 bg-gradient-to-t from-black/50 to-white transition-all duration-300 bottom-0 absolute'>
                 <div className = 'flex flex-col justify-evenly'>
-
-                
                     <h2 className = 'text-shadow font-semibold'>
                         {projectName}
                     </h2>
-                    
                     <div className = 'flex gap-2 mt-2'>
                     {
                         techUsed.map((tech, index) => {
@@ -40,7 +44,7 @@ const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectNa
                     </div>
                 </div>
                 <div>
-                    <FaGithub className = 'hover:text-white text-gray-300 text-shadow' onClick = {() => window.open(githubRepo)} size = {30}/>
+                    <FaGithub className = 'hover:text-white transition-all text-gray-300 text-shadow hover:scale-105' onClick = {() => window.open(githubRepo)} size = {30}/>
                 </div>
             </div>
             <Image 

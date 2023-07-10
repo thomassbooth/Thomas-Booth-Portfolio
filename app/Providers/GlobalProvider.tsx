@@ -42,7 +42,7 @@ export const GlobalContextProvider = ({ children } : { children: React.ReactNode
         y: 0,
       })
     const [cursorVariant, setCursorVariant] = useState('default')
-    const [mouseCircleEnabled, setMouseCircleEnabled] = useState(false)
+    const [mouseCircleEnabled, setMouseCircleEnabled] = useState(true)
     const textEnter = () => {
         console.log('hi there')
         setCursorVariant('text')}
