@@ -3,6 +3,7 @@ import PageTransition from "../../components/PageTransition"
 import Title from "../../components/Title"
 import Image from "next/image"
 import Project from "@/components/projects/Project"
+import Intro from "@/components/projects/Intro"
 
 export const metadata = {
   title: 'Projects - Thomas Booth',
@@ -13,6 +14,7 @@ const ProjectsPage = () => {
   return (
     <PageTransition width = 'w-4/5'>
       <Title title = 'Projects' pageNo = {'03'} slideDirection = {'down'}/>
+      <Intro/>
       <Project className = 'mt-20' imgSrc='/images/portfolioscreenshot.png' alt = 'ThomasBooth' projectName = 'Personal Portfolio'
         techUsed = {['NextJS', 'Zustand', 'Framer Motion', 'TailwindCSS']}
         githubRepo = 'https://github.com/thomassbooth/thomas-booth-portfolio'
