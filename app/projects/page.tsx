@@ -29,7 +29,7 @@ const ProjectsPage = () => {
           left = {false}/>
       </div>
       <Outro/>
-      <Project className = 'mt-10' imgSrc='/images/nunigramscreenshot.jpeg' alt = 'Nunigram' projectName = 'Instagram Frontend Clone'
+      <Project className = 'my-10' imgSrc='/images/nunigramscreenshot.jpeg' alt = 'Nunigram' projectName = 'Instagram Frontend Clone'
         techUsed = {['ReactJS', 'Redux', 'Framer Motion', 'Auth0', 'TailwindCSS']}
         githubRepo = 'https://github.com/thomassbooth/nunigram-frontend'
         hosted = 'https://nunigram.netlify.app/'
