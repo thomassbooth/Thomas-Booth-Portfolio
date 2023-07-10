@@ -29,8 +29,8 @@ const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, pro
             whileInView="visible"
             viewport={{ once: true }}
             variants={{
-                hidden: {opacity: 0},
-                visible: {opacity: 1}
+                hidden: hiddenVariant,
+                visible: {opacity: 1, x: '0%', y: '0%'}
             }}
             transition={{delay: 1}}
             className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
@@ -58,23 +58,13 @@ const Project: React.FC<projectProps> = ({className = '', left, imgSrc, alt, pro
                     <FaGithub className = 'hover:text-white transition-all text-gray-300 text-shadow hover:scale-105' onClick = {() => window.open(githubRepo)} size = {30}/>
                 </div>
             </div>
-            <motion.div
-            initial = 'hidden'
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-                hidden: hiddenVariant,
-                visible: {opacity: 1, x: '0%', y: '0%'}
-            }}
-            transition={{delay: 1}}>
-                <Image 
-                    className = 'rounded-xl'
-                    src = {imgSrc}
-                    alt = {alt} 
-                    priority
-                    width = {2000}
-                    height = {2000}/>
-            </motion.div>
+            <Image 
+                className = 'rounded-xl'
+                src = {imgSrc}
+                alt = {alt} 
+                priority
+                width = {2000}
+                height = {2000}/>
         </motion.div>
     </div>
   )
