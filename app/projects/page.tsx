@@ -4,6 +4,7 @@ import Title from "../../components/Title"
 import Image from "next/image"
 import Project from "@/components/projects/Project"
 import Intro from "@/components/projects/Intro"
+import Outro from "@/components/projects/Outro"
 
 export const metadata = {
   title: 'Projects - Thomas Booth',
@@ -32,6 +33,7 @@ const ProjectsPage = () => {
         githubRepo = 'https://github.com/thomassbooth/nunigram-frontend'
         hosted = 'https://nunigram.netlify.app/'
         left = {true}/>
+      <Outro/>
     </PageTransition>
   )
 } 
