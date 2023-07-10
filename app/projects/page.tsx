@@ -15,8 +15,8 @@ const ProjectsPage = () => {
       <Title title = 'Projects' pageNo = {'03'} slideDirection = {'down'}/>
       <Project className = 'mt-20' imgSrc='/images/portfolioscreenshot.png' alt = 'ThomasBooth' projectName = 'Personal Portfolio'
         techUsed = {['NextJS', 'Zustand', 'Framer Motion', 'TailwindCSS']}
-        githubRepo = 'https://github.com/thomassbooth/nunigram-frontend'
-        hosted = 'https://nunigram.netlify.app/'
+        githubRepo = 'https://github.com/thomassbooth/thomas-booth-portfolio'
+        hosted = 'https://thomas-booth-portfolio.vercel.app/'
         />
       <div className = 'w-full flex justify-end'>
         <Project className = 'mt-60' imgSrc='/images/airbnbscreenshot.png' alt = 'airbnb' projectName = 'Airbnb Rental Clone'
