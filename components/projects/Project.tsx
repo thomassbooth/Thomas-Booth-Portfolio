@@ -51,6 +51,7 @@ const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectNa
                 className = 'rounded-xl'
                 src = {imgSrc}
                 alt = {alt} 
+                priority
                 width = {2000}
                 height = {2000}/>
         </div>
