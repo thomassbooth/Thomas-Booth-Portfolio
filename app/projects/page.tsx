@@ -13,8 +13,8 @@ const ProjectsPage = () => {
   return (
     <PageTransition width = 'w-4/5'>
       <Title title = 'Projects' pageNo = {'03'} slideDirection = {'down'}/>
-      <Project className = 'mt-20' imgSrc='/images/nunigramscreenshot.jpeg' alt = 'Nunigram' projectName = 'Instagram Frontend Clone'
-        techUsed = {['ReactJS', 'Redux', 'Framer Motion', 'Auth0', 'TailwindCSS']}
+      <Project className = 'mt-20' imgSrc='/images/portfolioscreenshot.png' alt = 'ThomasBooth' projectName = 'Personal Portfolio'
+        techUsed = {['NextJS', 'Zustand', 'Framer Motion', 'TailwindCSS']}
         githubRepo = 'https://github.com/thomassbooth/nunigram-frontend'
         hosted = 'https://nunigram.netlify.app/'
         />
