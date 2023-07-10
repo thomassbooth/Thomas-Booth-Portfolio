@@ -31,7 +31,7 @@ const Project: React.FC<projectProps> = ({className = '', imgSrc, alt, projectNa
                 hidden: {opacity: 0, x: '-40%'},
                 visible: {opacity: 1, x: '0%'}
             }}
-            transition={{delay: 0.5, type: 'spring', duration: 1}}
+            transition={{type: 'spring', duration: 1}}
             className = 'group hover:-translate-y-2 shadow-lg cursor-pointer transition-all duration-500 overflow-hidden relative'
             onClick = {() => {window.open(hosted)}}
             onMouseEnter = {textEnter} onMouseLeave = {textLeave}>
