@@ -59,10 +59,10 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <div className = 'px-5'>
+              {/* <div className = 'px-5'>
                 <DarkmodeIcon/>
-              </div>
-              <div className = 'pr-5'>
+              </div> */}
+              <div className = 'pl-5'>
                 <CircleToggle/>
               </div>
             </nav>

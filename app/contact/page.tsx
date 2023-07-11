@@ -20,13 +20,13 @@ const ContactPage = () => {
       <div className = 'w-full flex justify-center mt-20'>
         <div className = 'w-4/5 text-center text-xl'>
           <p>
-            Ready to <span className = 'font-semibold'>talk</span> about your next big idea or just fancy a <span className = 'font-semibold'>chat</span>?
+            Ready to <span className = 'font-semibold'>talk</span> about <span className = 'font-semibold'>your</span> next big idea or just fancy a <span className = 'font-semibold'>chat</span>?
           </p>
           <a href="mailto:thomasbooth26@gmail.com">
-            <div className = 'inline-block text-[#F9F3EE] px-5 py-3 bg-pastel-blue-light hover:bg-pastel-blue-dark/80 hover:scale-[1.02] transition-all items-center gap-2 my-12 font-medium text-lg'>
+            <div className = 'inline-block text-[#F9F3EE] px-5 py-3 bg-pastel-blue-light hover:bg-pastel-blue-dark/80 hover:scale-[1.02] transition-all items-center gap-2 my-12 font-medium text-2xl'>
               Get In Touch
             </div>
-          </a>
+          </a>  
           <Email/>
         </div>
       </div>
