@@ -15,7 +15,7 @@ const Email = () => {
     <motion.p 
       initial={{ x: '-50%', opacity: 0 }}
       animate={{ x: '0%', opacity: 0.7 }}
-      transition={{delay: 2, type: 'spring', duration: 1}}
+      transition={{delay: 1.5, type: 'spring', duration: 1}}
       className = 'text-sm'>
         Dont like pop ups? Find me at:
         <br/>
