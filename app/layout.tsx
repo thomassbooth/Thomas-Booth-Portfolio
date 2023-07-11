@@ -8,6 +8,7 @@ import { GlobalContextProvider } from './Providers/GlobalProvider'
 import OuterContainer from '../components/OuterContainer'
 import Grain from '@/components/Grain'
 import CircleCursor from '@/components/CircleCursor'
+import ToasterProvider from './Providers/ToastProvider'
 
 const roboto = Quicksand({subsets: ['latin'] })
 const inter = Inter({subsets: ['latin'] })
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} tracking-wide w-screen overflow-x-hidden`}>
+        <ToasterProvider/>
         <GlobalContextProvider>
           <Grain/>
           <CircleCursor/>
