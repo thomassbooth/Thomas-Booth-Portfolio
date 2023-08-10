@@ -14,7 +14,8 @@ const List: React.FC<listProps> = ({ children, title, direction }) => {
     <div className = 'flex flex-col items-center'>
         <motion.h3
           initial = 'hidden'
-          whileInView = 'visible'
+          whileInView="visible"
+          viewport={{ once: true }}
           variants = {{
             hidden: {opacity: 0, y: '-40%'},
             visible: {opacity: 1, y: '0'}
