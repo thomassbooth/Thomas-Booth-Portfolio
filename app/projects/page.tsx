@@ -11,13 +11,27 @@ export const metadata = {
   description: 'Professional portfolio designed and written by Thomas Booth.',
 }
 
+const projects = [
+  {
+    imageSrc: '/images/portfolioscreenshot.png',
+
+  }
+]
 const ProjectsPage = () => {
   return (
     <PageTransition width = 'w-4/5'>
       <Title title = 'Projects' pageNo = {'03'} slideDirection = {'down'}/>
       {/* <Intro/> */}
-      <Project className = 'mt-20' imgSrc='/images/portfolioscreenshot.png' alt = 'ThomasBooth' projectName = 'Personal Portfolio'
-        techUsed = {['NextJS', 'Zustand', 'Framer Motion', 'TailwindCSS']}
+      <div className = 'w-full flex justify-end'>
+        <Project className = 'mt-20' imgSrc="/images/dg-screenshot.png" alt = 'DannyGreen' projectName = 'Danny Green Creative Design Portfolio'
+          techUsed = {['NextJS', 'Lenis Scroll', 'Framer Motion', 'TailwindCSS']}
+          githubRepo = 'https://github.com/thomassbooth/danny-green'
+          hosted = 'https://danny-green.vercel.app/'
+          left = {false}
+        />
+      </div>
+      <Project className = 'mt-60' imgSrc='/images/portfolioscreenshot.png' alt = 'ThomasBooth' projectName = 'Personal Portfolio'
+        techUsed = {['NextJS', 'Zustand', 'Framer Motion', 'TailwindCSS', 'Lenis Scroll']}
         githubRepo = 'https://github.com/thomassbooth/thomas-booth-portfolio'
         hosted = 'https://thomas-booth-portfolio.vercel.app/'
         left = {true}/>
