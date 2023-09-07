@@ -23,7 +23,7 @@ const TechClient = () => {
             }}
             transition = {{delay: 0.5, duration: 0.5}}
             className = 'mb-8 text-lg'>
-            Although my experience spans a broad range of technologies, I have honed my expertise predominantly in the following key areas through my <Link className = 'cursor-pointer font-semibold text-pastel-blue-light hover:underline' to = 'professionaljourney' smooth = {true} duration = {1000}>Professional Journey</Link> and personal development.
+            I&apos;ve mainly honed my expertise in these key areas through my <Link className = 'cursor-pointer font-semibold text-pastel-blue-light hover:underline' to = 'professionaljourney' smooth = {true} duration = {1000}>Professional Journey</Link> and personal development.
         </motion.p>
         <article className = 'flex flex-wrap flex-row justify-between '>
             <List title = 'Typescript & Javascript' direction = 'up'>
