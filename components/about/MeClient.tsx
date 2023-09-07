@@ -22,12 +22,12 @@ const MeClient = () => {
   
   return (
     <section ref = {container}>
-      <div className = 'flex lg:flex-nowrap flex-wrap text-lg items-center'>
+      <div className = 'flex lg:flex-nowrap h-full flex-wrap text-lg items-center'>
         <motion.div 
           initial={{ x: '50%', opacity: 0 }}
           animate={{ x: '0%', opacity: 1 }}
           transition={{delay: 1, type: 'spring', when: 'beforeChildren', duration: 1, staggerChildren: 0.2}}
-          className = 'flex flex-col gap-4 leading-relaxed px-4'>
+          className = 'flex flex-col h-[500px] justify-evenly items-evenly leading-relaxed px-4'>
           <p>
               A Software Engineer with 8 years of coding experience total, 2 years professionally from <span onMouseEnter = {textEnter} onMouseLeave = {textLeave} className = 'font-semibold line-through'>London</span> currently relocating to <span onMouseEnter = {textEnter} onMouseLeave = {textLeave} className = 'font-semibold'>Dubai.</span>
           </p>
